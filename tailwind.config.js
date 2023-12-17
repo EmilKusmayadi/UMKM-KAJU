@@ -15,23 +15,33 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                'old-gray': '#212121'
+                'old-gray': '#212121',
+                'green': '#345E5C',
+                'peanut': '#E8C597'
 
             },
             backgroundColor: {
-                'old-gray': '#212121'
+                'old-gray': '#212121',
+                'green': '#345E5C',
+                'peanut': '#E8C597'
 
             },
             textColor: {
-                'old-gray': '#212121'
+                'old-gray': '#212121',
+                'green': '#345E5C',
+                'peanut': '#E8C597'
 
             },
             borderColor: {
-                'old-gray': '#212121'
+                'old-gray': '#212121',
+                'green': '#345E5C',
+                'peanut': '#E8C597'
 
             },
             outlineColor: {
-                'old-gray': '#212121'
+                'old-gray': '#212121',
+                'green': '#345E5C',
+                'peanut': '#E8C597'
 
             },
         },
