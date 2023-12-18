@@ -14,7 +14,7 @@
         @include('components.nav')
 
         <main class="px-8">
-            <div class="relative mt-8 rounded-2xl overflow-hidden flex justify-center items-center h-screen">
+            <div class="relative mt-2 rounded-2xl overflow-hidden flex justify-center items-center h-screen">
                 <img src="{{ asset("image/olivie-strauss.jpg") }}" alt="olive-strauss" class="absolute -scale-x-100">
                 <div class="z-10 w-full h-full flex flex-col justify-end p-16 space-y-10">
                     <h1 class="text-7xl font-semibold text-old-gray">Hidrophonik<br>Terbaik</h1>
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="w-full flex justify-between items-center text-2xl my-14">
+            <div class="w-full flex justify-between items-center text-2xl mt-14 mb-5">
                 <h2>BUNDLE</h2>
                 <h2>PROMO</h2>
             </div>
@@ -91,7 +91,7 @@
 
             </div>
 
-            <div class="w-full flex flex-col gap-y-8 justify-center items-center my-28 text-center">
+            <div class="w-full flex flex-col gap-y-8 justify-center items-center mb-28 mt-16 text-center">
                 <h3 class="text-[#345E5C] font-bold text-2xl">Spesial untuk semua</h3>
                 <h1 class="text-old-gray text-4xl font-normal">Hasil Hidroponik terbaik dari kebun<br>hidroponik terbaik</h1>
             </div>
@@ -113,9 +113,9 @@
                 </div>
             </div>
 
-            <h1 class="text-green font-bold text-2xl text-center my-40">Penuhi Kebutuhan Sayur & Buah</h1>
+            <h1 class="text-green font-bold text-2xl text-center mt-32 mb-16">Penuhi Kebutuhan Sayur & Buah</h1>
 
-            <div class="text-old-gray w-full flex flex-col gap-y-16">
+            <div class="text-old-gray w-full flex flex-col gap-y-10">
                 <div class="w-full flex justify-between items-end">
                     <div class="bg-peanut px-12 py-3 rounded-lg">
                         <ul class="flex gap-x-8">
@@ -246,7 +246,7 @@
                 </div>
             </div>
 
-            <div class="my-40 w-full flex justify-center items-center px-20">
+            <div class="my-20 w-full flex justify-center items-center px-20">
 
                 <div class="relative bg-peanut p-10 flex justify-center items-center gap-x-10 rounded-2xl">
                     <div>
@@ -330,7 +330,7 @@
 
         <footer class="w-full bg-peanut flex justify-between items-end px-6 pt-8 pb-12">
             <div class="text-black pr-5">@2024</div>
-            <div class="flex flex-col justify-between items-center gap-y-32">
+            <div class="flex flex-col justify-between items-center gap-y-16">
                 <div>
                     <ul class="flex gap-x-5 text-old-gray">
                         <li><a href="#">Shop</a></li>
