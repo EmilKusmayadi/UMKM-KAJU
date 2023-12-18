@@ -25,14 +25,14 @@
                 </div>
             </div>
 
-            <div class="w-full flex justify-between items-center text-2xl mt-14 mb-5">
+            <div class="w-full flex justify-between items-center text- md:text-2xl mt-14 mb-5">
                 <h2>BUNDLE</h2>
                 <h2>PROMO</h2>
             </div>
 
             <div class="w-full grid justify-between items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
 
-                <div class="bg-[#E9ECF4] flex justify-center items-end h-64 px-3 py-5 gap-x-8 rounded-xl">
+                <div class="bg-[#E9ECF4] flex justify-center items-end h-52 md:h-64 px-3 py-5 gap-x-8 rounded-xl">
                     <div class="flex flex-col justify-between h-full">
                         <p class="font-bold">Sayur</p>
 
@@ -51,7 +51,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#EAD9CF] flex justify-center items-end h-64 px-3 py-5 gap-x-8 rounded-xl">
+                <div class="bg-[#EAD9CF] flex justify-center items-end h-52 md:h-64 px-3 py-5 gap-x-8 rounded-xl">
                     <div class="flex flex-col justify-between h-full">
                         <p class="font-bold">Sayur</p>
 
@@ -70,7 +70,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#F3E8E8] flex justify-center items-end h-64 px-3 py-5 gap-x-8 rounded-xl">
+                <div class="bg-[#F3E8E8] flex justify-center items-end h-52 md:h-64 px-3 py-5 gap-x-8 rounded-xl">
                     <div class="flex flex-col justify-between h-full">
                         <p class="font-bold">Sayur</p>
 
@@ -90,7 +90,7 @@
                 </div>
 
                 {{-- hilang 1 (hidden kalo desktop) --}}
-                <div class="lg:hidden bg-[#FFE1EA] flex justify-center items-end h-64 px-3 py-5 gap-x-8 rounded-xl">
+                <div class="lg:hidden bg-[#FFE1EA] flex justify-center items-end h-52 md:h-64 px-3 py-5 gap-x-8 rounded-xl">
                     <div class="flex flex-col justify-between h-full">
                         <p class="font-bold">Sayur</p>
 
@@ -113,7 +113,7 @@
 
             <div class="w-full flex flex-col gap-y-8 justify-center items-center mb-28 mt-16 text-center">
                 <h3 class="text-[#345E5C] font-bold text-2xl">Spesial untuk semua</h3>
-                <h1 class="text-old-gray text-4xl font-normal">Hasil Hidroponik terbaik dari kebun<br>hidroponik terbaik</h1>
+                <h1 class="text-old-gray text-2xl md:text-4xl font-normal">Hasil Hidroponik terbaik dari kebun<br>hidroponik terbaik</h1>
             </div>
 
             <div class="w-full flex justify-center items-center rounded-r-2xl h-96 bg-green">
