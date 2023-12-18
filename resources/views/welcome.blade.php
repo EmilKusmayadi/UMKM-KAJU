@@ -287,16 +287,16 @@
                 <a href="#" class="uppercase border-b-[1px] border-white px-1 font-light">semua</a>
             </div>
 
-            <div class="w-full flex justify-center items-center gap-x-5">
+            <div class="w-full h-[60vh] max-h-fit flex justify-center items-center gap-x-5">
 
-                <div class="bg-[#D9F2F9] px-5 py-8 rounded-xl w-full h-[65vh] flex flex-col justify-between relative">
+                <div class="bg-[#D9F2F9] px-5 py-8 rounded-xl w-full h-full flex flex-col justify-between relative">
                     <div class="text-old-gray flex flex-col gap-y-8">
                         <p class="font-bold text-black">Bundle</p>
                         <h1 class="text-3xl font-semibold leading-8">Belanja lebih <br> hemat dan lebih <br>puas</h1>
                         <p>Mulai dari Rp.3000 per kg</p>
                     </div>
 
-                    <div class="-translate-y-5">
+                    <div class="">
                         <a href="#">
                             <button class="bg-green px-6 py-2 text-white font-light rounded-lg text-sm">Beli Sekarang</button>
                         </a>
@@ -307,14 +307,14 @@
                     </div>
                 </div>
 
-                <div class="bg-[#D8EBE5] px-5 py-8 rounded-xl w-full h-[65vh] flex flex-col justify-between relative">
+                <div class="bg-[#D8EBE5] px-5 py-8 rounded-xl w-full h-full flex flex-col justify-between relative">
                     <div class="text-old-gray flex flex-col gap-y-8">
                         <p class="font-bold text-black">Promo</p>
                         <h1 class="text-3xl font-semibold leading-8">Penawaran<br> Menarik</h1>
                         <p>Info lebih lanjut</p>
                     </div>
 
-                    <div class="-translate-y-5">
+                    <div class="">
                         <a href="#">
                             <button class="bg-green px-6 py-2 text-white font-light rounded-lg text-sm">Cek Sekarang</button>
                         </a>
