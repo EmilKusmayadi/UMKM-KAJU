@@ -30,7 +30,7 @@
                 <h2>PROMO</h2>
             </div>
 
-            <div class="w-full grid justify-between items-center grid-cols-3 gap-3">
+            <div class="w-full grid justify-between items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
 
                 <div class="bg-[#E9ECF4] flex justify-center items-end h-64 px-3 py-5 gap-x-8 rounded-xl">
                     <div class="flex flex-col justify-between h-full">
@@ -46,7 +46,7 @@
                         </a>
                     </div>
 
-                    <div class="w-52">
+                    <div class="w-32 md:w-52">
                         <img src="{{ asset('image/cherry-tomato-vegetable-pizza-tomato-png-image-picture-download-1576239854cd1f0dbed9d087d0c87744.png') }}" alt="">
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         </a>
                     </div>
 
-                    <div class="w-52">
+                    <div class="w-32 md:w-52">
                         <img src="{{ asset('image/bell-pepper-stuffed-peppers-food-vegetable-fruit-vegetable-6e2c9c6b8cab99b613caf45b442d1340.png') }}" alt="">
                     </div>
                 </div>
@@ -84,13 +84,13 @@
                         </a>
                     </div>
 
-                    <div class="w-52">
+                    <div class="w-32 md:w-52">
                         <img src="{{ asset('image/romaine-lettuce-leaf-vegetable-salad-leaf-lettuce-vegetable-98bb08e8b78390c60956d2f33ed33afa.png') }}" alt="">
                     </div>
                 </div>
 
                 {{-- hilang 1 (hidden kalo desktop) --}}
-                <div class="hidden bg-[#FFE1EA] flex justify-center items-end h-64 px-3 py-5 gap-x-8 rounded-xl">
+                <div class="lg:hidden bg-[#FFE1EA] flex justify-center items-end h-64 px-3 py-5 gap-x-8 rounded-xl">
                     <div class="flex flex-col justify-between h-full">
                         <p class="font-bold">Sayur</p>
 
@@ -100,11 +100,11 @@
                         </div>
 
                         <a href="#">
-                            <button class="bg-green px-6 py-2 text-white font-light rounded-lg text-sm">Beli Sekarang</button>
+                            <button class="bg-green px-6 py-2 ms-3 text-white font-light rounded-lg text-sm">Beli Sekarang</button>
                         </a>
                     </div>
 
-                    <div class="w-52">
+                    <div class="w-32 md:w-52">
                         <img src="{{ asset('image/cauliflower-cabbage-vegetable-fruit-food-cauliflower-2f33f5a41d18c5b6041ee7f8bc37683c.png') }}" alt="">
                     </div>
                 </div>
@@ -137,7 +137,7 @@
 
             <div class="text-old-gray w-full flex flex-col gap-y-10">
                 <div class="w-full flex justify-between items-end">
-                    <div class="bg-peanut px-12 py-3 rounded-lg">
+                    <div class="bg-peanut px-3 md:px-12 py-3 rounded-lg">
                         <ul class="flex gap-x-6 text-lg">
                             <li class="font-bold">
                                 <a href="#">All</a>
@@ -153,10 +153,10 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="uppercase border-b-[1px] border-black px-1 font-light">semua</a>
+                    <a href="#" class="uppercase border-b-[1px] border-black px-1 font-light text-sm">semua</a>
                 </div>
 
-                <div class="grid justify-between items-center gap-3 grid-cols-5">
+                <div class="grid justify-between items-center gap-3 grid-cols-2 lg:grid-cols-5">
 
                     <div class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
 
@@ -264,7 +264,7 @@
                     </div>
 
                     {{-- hilang 1 (hidden kalo desktop) --}}
-                    <div class="hidden bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
+                    <div class="lg:hidden bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
 
                         <div class="w-40">
                             <img src="{{ asset('image/choy-sum-malabar-spinach-leaf-vegetable-vegetable-9bd9b6b779bb3e1bb3390ca0ac149cc7.png') }}" alt="">
@@ -288,9 +288,9 @@
                 </div>
             </div>
 
-            <div class="my-20 w-full flex justify-center items-center px-20">
+            <div class="md:my-20 w-1 md:w-full flex justify-center items-center lg:px-20">
 
-                <div class="relative bg-peanut p-10 flex justify-center items-center gap-x-10 rounded-2xl">
+                <div class="relative bg-peanut p-10 flex justify-center items-center md:gap-x-10 rounded-2xl">
                     <div>
                         <div class="text-old-gray w-80 flex flex-col gap-y-7">
                             <h1 class="font-semibold text-4xl">Memastikan ketersediaan sepanjang tahun</h1>
@@ -323,19 +323,19 @@
 
         </main>
 
-        <div class="bg-green px-8 py-10 flex flex-col justify-center items-center gap-y-10">
+        <div class="bg-green h-[110vh] md:[60vh] px-8 md:py-10 flex flex-col justify-center items-center gap-y-10">
             <div class="w-full flex justify-between items-center text-white">
                 <h1 class="font-bold text-2xl">Penawaran Spesial</h1>
                 <a href="#" class="uppercase border-b-[1px] border-white px-1 font-light">semua</a>
             </div>
 
-            <div class="w-full h-[60vh] max-h-fit flex justify-center items-center gap-x-5">
+            <div class="w-full h-[60vh] max-h-fit grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-x-5">
 
-                <div class="bg-[#D9F2F9] px-5 py-8 rounded-xl w-full h-full flex flex-col justify-between relative">
+                <div class="bg-[#D9F2F9] px-5 py-8 rounded-xl w-full h-full flex flex-col justify-between relative mb-7 md:mb-0">
                     <div class="text-old-gray flex flex-col gap-y-8">
                         <p class="font-bold text-black">Bundle</p>
-                        <h1 class="text-4xl font-semibold leading-8">Belanja lebih <br> hemat dan lebih <br>puas</h1>
-                        <p>Mulai dari Rp.3000 per kg</p>
+                        <h1 class="text-2xl md:text-4xl font-semibold leading-8">Belanja lebih <br> hemat dan lebih <br>puas</h1>
+                        <p class="text-sm">Mulai dari Rp.3000 per kg</p>
                     </div>
 
                     <div class="">
@@ -344,7 +344,7 @@
                         </a>
                     </div>
 
-                    <div class="w-80 self-end absolute bottom-0">
+                    <div class="w-44 md:w-80 self-end absolute bottom-10 md:bottom-0">
                         <img src="{{ asset('image/organic-food-juice-vegetable-fruit-basket-vegetable-png-photos-6d5e358490722e7b06e5f983ba54fbb0.png') }}" alt="">
                     </div>
                 </div>
@@ -362,7 +362,7 @@
                         </a>
                     </div>
 
-                    <div class="w-80 self-end absolute bottom-0">
+                    <div class="w-48 sm:w-55 md:w-80 self-end absolute bottom-0">
                         <img src="{{ asset('image/fruit-supermarket-vegetable-auglis-supermarket-shelf-water-aaf86a1d356a5514c189d7f7ad03eea1.png') }}" alt="">
                     </div>
                 </div>
@@ -380,7 +380,7 @@
                         <li><a href="#">Kontak</a></li>
                     </ul>
                 </div>
-                <h1 class="text-8xl font-bold text-[#1C1D1C]">Kajuu</h1>
+                <h1 class="text-6xl md:text-8xl font-bold text-[#1C1D1C]">Kajuu</h1>
             </div>
             <div class="text-black">
                 All RIghts Reservd
