@@ -111,34 +111,34 @@
 
             </div>
 
-            <div class="w-full flex flex-col gap-y-8 justify-center items-center mb-28 mt-16 text-center">
-                <h3 class="text-[#345E5C] font-bold text-2xl">Spesial untuk semua</h3>
-                <h1 class="text-old-gray text-2xl md:text-4xl font-normal">Hasil Hidroponik terbaik dari kebun<br>hidroponik terbaik</h1>
+            <div class="w-full flex flex-col gap-y-8 justify-center items-center mb-16 mt-10 md:mb-28 md:mt-16 text-center">
+                <h3 class="text-[#345E5C] font-bold text-[12px] md:text-2xl">Spesial untuk semua</h3>
+                <h1 class="text-old-gray text-[16px] md:text-4xl font-normal">Hasil Hidroponik terbaik dari kebun<br>hidroponik terbaik</h1>
             </div>
 
-            <div class="w-full flex justify-center items-center rounded-r-2xl h-96 bg-green">
-                <div class="w-full rounded-2xl overflow-hidden">
-                    <img src="{{ asset('image/getty-images-oIXoJSXuCpw-unsplash 2.png') }}" alt="">
+            <div class="w-full flex justify-center items-center rounded-2xl md:rounded-r-2xl h-[160px] md:h-96 bg-green">
+                <div class="md:w-full w-[500px] h-[190px] md:h-0 rounded-2xl overflow-hidden">
+                    <img src="{{ asset('image/getty-images-oIXoJSXuCpw-unsplash 2.png') }}" alt="" class="h-[190px] w-[500px] md:h-full md:w-full">
                 </div>
 
-                <div class="text-white w-full h-full flex flex-col items-start justify-center gap-y-8 pl-10 pr-14">
-                    <h1 class="text-4xl font-medium">Keajaiban dunia<br>sayuran<br>hidroponik</h1>
-                    <p>Dibangun di atas prinsip teknologi<br>hidroponik terkini.</p>
-                    <a href="#" class="underline">Tentang Kami</a>
+                <div class="text-white w-full h-full flex flex-col items-start justify-center md:gap-y-8 md:pl-10 md:pr-14 pl-4">
+                    <h1 class="text-[12px] md:text-4xl font-medium">Keajaiban dunia<br>sayuran<br>hidroponik</h1>
+                    <p class="text-[8px]">Dibangun di atas prinsip teknologi<br>hidroponik terkini.</p>
+                    <a href="#" class="underline text-[8px]">Tentang Kami</a>
 
-                    <div class="relative flex justify-center items-center self-end -translate-y-5">
-                        <div class="absolute w-24 h-24 bg-white/5 rounded-full"></div>
-                        <a href="#" class="text-xs z-10 hover:underline">More Info</a>
+                    <div class="relative flex justify-center items-center self-end md:-translate-y-5">
+                        <div class="absolute right-3 w-10 h-10 md:w-24 md:h-24 bg-white/5 rounded-full"></div>
+                        <a href="#" class="text-[5px] z-10 hover:underline mr-5">More Info</a>
                     </div>
                 </div>
             </div>
 
-            <h1 class="text-green font-bold text-2xl text-center mt-32 mb-16">Penuhi Kebutuhan Sayur & Buah</h1>
+            <h1 class="text-green font-bold text-[14px] md:text-2xl text-center mt-32 mb-16">Penuhi Kebutuhan Sayur & Buah</h1>
 
             <div class="text-old-gray w-full flex flex-col gap-y-10">
                 <div class="w-full flex justify-between items-end">
                     <div class="bg-peanut px-3 md:px-12 py-3 rounded-lg">
-                        <ul class="flex gap-x-6 text-lg">
+                        <ul class="flex gap-x-6 text-[14px] md:text-lg">
                             <li class="font-bold">
                                 <a href="#">All</a>
                             </li>
