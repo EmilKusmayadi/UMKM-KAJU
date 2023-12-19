@@ -117,7 +117,7 @@
             </div>
 
             <div class="w-full flex justify-center items-center rounded-2xl md:rounded-r-2xl h-[160px] md:h-96 bg-green">
-                <div class="md:w-full w-[500px] h-[190px] md:h-full rounded-2xl overflow-hidden">
+                <div class="md:w-full w-[500px] h-[190px] md:h-[500px] rounded-2xl overflow-hidden">
                     <img src="{{ asset('image/getty-images-oIXoJSXuCpw-unsplash 2.png') }}" alt="" class="h-[190px] w-[500px] md:h-full md:w-full">
                 </div>
 
