@@ -15,10 +15,10 @@
 
         <main class="px-8">
             <div class="relative mt-2 rounded-2xl overflow-hidden flex justify-center items-center h-screen">
-                <img src="{{ asset("image/olivie-strauss.jpg") }}" alt="olive-strauss" class="absolute -scale-x-100">
-                <div class="z-10 w-full h-full flex flex-col justify-end p-16 space-y-10">
-                    <h1 class="text-7xl font-semibold text-white">Hidrophonik<br>Terbaik</h1>
-                    <p class="text-sm text-white w-72">Dengan bangga menawarkan sayuran hidroponik tanpa pestisida</p>
+                <img src="{{ asset("image/olivie-strauss.jpg") }}" alt="olive-strauss" class="absolute top-0 -scale-x-100">
+                <div class=" z-10 w-full h-0  md:h-full flex flex-col justify-end md:p-16 md:space-y-10">
+                    <h1 class="text-[30px] md:text-7xl font-semibold text-white">Hidrophonik<br>Terbaik</h1>
+                    <p class="text-sm md:text-[12px] text-white w-72">Dengan bangga menawarkan sayuran hidroponik tanpa pestisida</p>
                     <a href="#">
                         <button class="bg-green px-6 py-2 text-white font-light rounded-lg">Selengkapnya</button>
                     </a>
@@ -117,18 +117,18 @@
             </div>
 
             <div class="w-full flex justify-center items-center rounded-2xl md:rounded-r-2xl h-[160px] md:h-96 bg-green">
-                <div class="md:w-full w-[500px] h-[190px] md:h-0 rounded-2xl overflow-hidden">
+                <div class="md:w-full w-[500px] h-[190px] md:h-full rounded-2xl overflow-hidden">
                     <img src="{{ asset('image/getty-images-oIXoJSXuCpw-unsplash 2.png') }}" alt="" class="h-[190px] w-[500px] md:h-full md:w-full">
                 </div>
 
                 <div class="text-white w-full h-full flex flex-col items-start justify-center md:gap-y-8 md:pl-10 md:pr-14 pl-4">
                     <h1 class="text-[12px] md:text-4xl font-medium">Keajaiban dunia<br>sayuran<br>hidroponik</h1>
-                    <p class="text-[8px]">Dibangun di atas prinsip teknologi<br>hidroponik terkini.</p>
-                    <a href="#" class="underline text-[8px]">Tentang Kami</a>
+                    <p class="text-[8px] md:text-[20px]">Dibangun di atas prinsip teknologi<br>hidroponik terkini.</p>
+                    <a href="#" class="underline text-[8px] md:text-[16px]">Tentang Kami</a>
 
                     <div class="relative flex justify-center items-center self-end md:-translate-y-5">
                         <div class="absolute right-3 w-10 h-10 md:w-24 md:h-24 bg-white/5 rounded-full"></div>
-                        <a href="#" class="text-[5px] z-10 hover:underline mr-5">More Info</a>
+                        <a href="#" class="text-[5px] md:text-[12px] z-10 hover:underline mr-5 md:mr-8">More Info</a>
                     </div>
                 </div>
             </div>
