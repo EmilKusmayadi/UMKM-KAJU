@@ -37,7 +37,7 @@
                         <p class="font-bold">Sayur</p>
 
                         <div>
-                            <h1 class="text-3xl font-normal">Tomat</h1>
+                            <h1 class="text-xl lg:text-3xl font-normal">Tomat</h1>
                             <p class="font-light">Rp.50000 per kg</p>
                         </div>
 
@@ -56,7 +56,7 @@
                         <p class="font-bold">Sayur</p>
 
                         <div>
-                            <h1 class="text-3xl font-normal">Paprika</h1>
+                            <h1 class="text-xl lg:text-3xl font-normal">Paprika</h1>
                             <p class="font-light">Rp.50000 per kg</p>
                         </div>
 
@@ -75,7 +75,7 @@
                         <p class="font-bold">Sayur</p>
 
                         <div>
-                            <h1 class="text-3xl font-normal">Selada</h1>
+                            <h1 class="text-xl lg:text-3xl font-normal">Selada</h1>
                             <p class="font-light">Rp.50000 per kg</p>
                         </div>
 
@@ -95,7 +95,7 @@
                         <p class="font-bold">Sayur</p>
 
                         <div>
-                            <h1 class="text-3xl font-normal">Kembang Kol</h1>
+                            <h1 class="text-xl lg:text-3xl font-normal">Kembang Kol</h1>
                             <p class="font-light">Rp.50000 per kg</p>
                         </div>
 
@@ -335,12 +335,12 @@
                     <div class="text-old-gray flex flex-col gap-y-8">
                         <p class="font-bold text-black">Bundle</p>
                         <h1 class="text-2xl md:text-4xl font-semibold leading-8">Belanja lebih <br> hemat dan lebih <br>puas</h1>
-                        <p class="text-sm">Mulai dari Rp.3000 per kg</p>
+                        <p class="text-xs md:text-lg">Mulai dari Rp.3000 per kg</p>
                     </div>
 
                     <div class="">
                         <a href="#">
-                            <button class="bg-green px-6 py-2 text-white font-light rounded-lg text-sm">Beli Sekarang</button>
+                            <button class="bg-green px-3 md:px-6 py-2 text-white font-light rounded-lg text-sm">Beli Sekarang</button>
                         </a>
                     </div>
 
@@ -352,17 +352,17 @@
                 <div class="bg-[#D8EBE5] px-5 py-8 rounded-xl w-full h-full flex flex-col justify-between relative">
                     <div class="text-old-gray flex flex-col gap-y-8">
                         <p class="font-bold text-black">Promo</p>
-                        <h1 class="text-4xl font-semibold leading-8">Penawaran<br> Menarik</h1>
-                        <p>Info lebih lanjut</p>
+                        <h1 class="text-2xl md:text-4xl font-semibold leading-8">Penawaran<br> Menarik</h1>
+                        <p class="text-xs mb-3 md:text-lg">Info lebih lanjut</p>
                     </div>
 
                     <div class="">
                         <a href="#">
-                            <button class="bg-green px-6 py-2 text-white font-light rounded-lg text-sm">Cek Sekarang</button>
+                            <button class="bg-green px-3 md:px-6 py-2 text-white font-light rounded-lg text-sm">Cek Sekarang</button>
                         </a>
                     </div>
 
-                    <div class="w-48 sm:w-55 md:w-80 self-end absolute bottom-0">
+                    <div class="w-44 sm:w-55 md:w-80 self-end absolute bottom-0">
                         <img src="{{ asset('image/fruit-supermarket-vegetable-auglis-supermarket-shelf-water-aaf86a1d356a5514c189d7f7ad03eea1.png') }}" alt="">
                     </div>
                 </div>
@@ -371,18 +371,18 @@
         </div>
 
         <footer class="w-full bg-peanut flex justify-between items-end px-6 pt-8 pb-12">
-            <div class="text-black pr-5">@2024</div>
+            <div class="text-black pr-5 text-sm md:text-2xl">@2024</div>
             <div class="flex flex-col justify-between items-center gap-y-16">
                 <div>
-                    <ul class="flex gap-x-5 text-old-gray">
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Tentang Kami</a></li>
+                    <ul class="flex md:gap-x-5 text-old-gray text-sm md:text-lg">
+                        <li><a href="#" class="pe-3 md:pe-0">Shop</a></li>
+                        <li><a href="#" class="pe-3 md:pe-0">Tentang Kami</a></li>
                         <li><a href="#">Kontak</a></li>
                     </ul>
                 </div>
-                <h1 class="text-6xl md:text-8xl font-bold text-[#1C1D1C]">Kajuu</h1>
+                <h1 class="text-3xl md:text-8xl font-bold text-[#1C1D1C]">Kajuu</h1>
             </div>
-            <div class="text-black">
+            <div class="text-xs md:text-2xl text-black">
                 All RIghts Reservd
             </div>
         </footer>
