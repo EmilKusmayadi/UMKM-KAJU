@@ -37,4 +37,8 @@ Route::resource('banners', BannersController::class);
 Route::resource('about', AboutController::class);
 Route::resource('footer', FooterController::class);
 
+
+Route::get('/detail', function() {
+    return view('detail');
+});
 require __DIR__.'/auth.php';
