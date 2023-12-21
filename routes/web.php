@@ -37,8 +37,13 @@ Route::resource('banners', BannersController::class);
 Route::resource('about', AboutController::class);
 Route::resource('footer', FooterController::class);
 
-
+// Detail
 Route::get('/detail', function() {
     return view('detail');
+});
+
+// Shop
+Route::get('/shop', function() {
+    return view('shop');
 });
 require __DIR__.'/auth.php';
