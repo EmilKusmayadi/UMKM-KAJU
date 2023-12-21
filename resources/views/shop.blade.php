@@ -29,6 +29,10 @@
                 <button class="w-[61px] md:w-[140px] lg:w-[208px] md:h-[47px] lg:h-[52px] bg-[#345E5C] text-white rounded-[5px] me-4 lg:me-4 md:block md:text-xs lg:text-lg text-[12px]">Shop</button>
                 <button class="w-[61px] md:w-[140px] lg:w-[208px] md:h-[47px] lg:h-[52px] border border-[#E8C597] text-black rounded-[5px] md:block md:text-xs lg:text-lg text-[12px]">Promo</button>
             </div>
+            @include('components.satu')
+            @include('components.empat')
         </div>
+        @include('components.tiga'
+        )@include('components.footer')
     </div>
 </x-app-layout>

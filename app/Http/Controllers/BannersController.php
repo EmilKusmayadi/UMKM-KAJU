@@ -15,7 +15,8 @@ class BannersController extends Controller
      */
     public function index()
     {
-        $data = Banners::orderBy('id', 'asc')->paginate(100);
+        $data = Banners::all();
+        // dd($data);
         return view('banner.index')->with('data', $data);
     }
 

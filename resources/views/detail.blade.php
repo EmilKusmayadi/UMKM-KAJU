@@ -44,10 +44,14 @@
                     </div>
                 </div>
             </div>
+            @include('components.satu')
+            @include('components.dua')
         </div>
         <div class="flex z-10 fixed bottom-0 w-full">
             <button class="w-[150px] h-[40px] bg-[#E8C597] text-white md:hidden flex justify-center items-center">@include('components.svg.cart')</button>
             <button class="w-full bg-[#345E5C] text-white md:hidden block">Beli Sekarang</button>
         </div>
+        @include('components.tiga')
+        @include('components.footer')
     </div>
 </x-app-layout>
