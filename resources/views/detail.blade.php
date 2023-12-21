@@ -34,9 +34,9 @@
                             <p class="text-[12px] md:text-[14px] lg:text-[16px]">Kandunga Nutrisi</p>
                         </div>
                     </div>
-                    <div class="my-7 lg:my-10">
+                    <div class="my-7 lg:mb-5 lg:mt-10 ">
                         <p class="text-[12px] mb-4">Tersedia dalam pilihan imperfect dan konvensional. Tomat merah imperfect memiliki sedikit bercak pada kulitnya. Namun rasa dan manfaatnya tetap sama. </p>
-                        <p class="text-[11.5px] lg:mb-8">Warna kulit bervariasi antara merah oranye hingga sedikit kehijauan. Rasanya segar dan kaya kandungan air. Cocok untuk salad, jus, atau camilan. Produk ini dapat digunakan sebagai menu MPASI. Terdapat potensi kelebihan/kekurangan gramasi +-10% per pack </p>
+                        <p class="text-[11.5px] ">Warna kulit bervariasi antara merah oranye hingga sedikit kehijauan. Rasanya segar dan kaya kandungan air. Cocok untuk salad, jus, atau camilan. Produk ini dapat digunakan sebagai menu MPASI. Terdapat potensi kelebihan/kekurangan gramasi +-10% per pack </p>
                     </div>
                     <div class="flex">
                         <button class="md:w-[140px] lg:w-[208px] md:h-[47px] lg:h-[52px] bg-[#345E5C] text-white rounded-[10px] md:me-4 lg:me-4 hidden md:block md:text-xs lg:text-lg">Beli Sekarang</button>
