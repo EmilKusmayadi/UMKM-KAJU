@@ -72,7 +72,7 @@ class BannersController extends Controller
     public function edit(string $id)
     {
         $data = Banners::where('id', $id)->first();
-        return view('banners.edit')->with('data', $data);
+        return view('banner.edit')->with('data', $data);
     }
 
     /**

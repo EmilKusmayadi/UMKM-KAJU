@@ -1,6 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
-        <div class="max-w-4xl mx-auto bg-white p-6 rounded-md shadow-md overflow-x-scroll ">
+    </x-slot>
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-md shadow-md overflow-x-scroll ">
         <a href="/products/create" class="font-semibold bg-sky-400 p-2 rounded-lg">+Tambah Data Products</a>
 
         <table class="min-w-full border border-gray-300 mt-10 overflow-x-scroll">
@@ -50,8 +51,11 @@
                         <td class="py-2 px-4 border-b">{{ $datas->special_deals }}</td>
                         <td class="py-2 px-4 border-b">{{ $datas->status }}</td>
                         <td class="py-2 px-4 border-b flex">
-                            <a href="{{ url('/products/'.$datas->id.'/edit') }}" class="text-gray-100 font-semibold bg-yellow-500 p-4 rounded-lg me-5">Edit</a>
-                            <form onsubmit="return confirm('Yakin mau hapus data')" action="{{ '/products/'.$datas->id }}" method="POST" class="text-gray-100 inline font-semibold bg-red-500 p-4 rounded-lg">
+                            <a href="{{ url('/products/' . $datas->id . '/edit') }}"
+                                class="text-gray-100 font-semibold bg-yellow-500 p-4 rounded-lg me-5">Edit</a>
+                            <form onsubmit="return confirm('Yakin mau hapus data')"
+                                action="{{ '/products/' . $datas->id }}" method="POST"
+                                class="text-gray-100 inline font-semibold bg-red-500 p-4 rounded-lg">
                                 @csrf
                                 @method('DELETE')
                                 <button class="" type="submit">Delete</button>
@@ -62,6 +66,4 @@
             </tbody>
         </table>
     </div>
-    </x-slot>
-
 </x-app-layout>
