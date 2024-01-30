@@ -14,7 +14,7 @@ class ProductsController extends Controller
     public function index()
     {
         $data = products::orderBy('id', 'asc')->paginate(5);
-        return view('products.index')->with('data', $data);
+        return view('backend.products.index')->with('data', $data);
     }
 
     /**
@@ -22,7 +22,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        return view('products.create');
+        return view('backend.products.create');
     }
 
     /**
@@ -122,7 +122,7 @@ class ProductsController extends Controller
     public function edit(string $id)
     {
         $data = products::where('id', $id)->first();
-        return view('products.edit')->with('data', $data);
+        return view('backend.products.edit')->with('data', $data);
     }
 
     /**
