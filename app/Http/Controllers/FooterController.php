@@ -15,7 +15,7 @@ class FooterController extends Controller
     {
         $data = Footer::all();
         // dd($data);
-        return view('footer.index')->with('data', $data);
+        return view('backend.footer.index')->with('data', $data);
     }
 
     /**
@@ -23,7 +23,7 @@ class FooterController extends Controller
      */
     public function create()
     {
-        return view('footer.create');
+        return view('backend.footer.create');
     }
 
     /**
@@ -82,7 +82,7 @@ class FooterController extends Controller
     public function edit(string $id)
     {
         $data = Footer::where('id', $id)->first();
-        return view('footer.edit')->with('data', $data);
+        return view('backend.footer.edit')->with('data', $data);
     }
 
     /**

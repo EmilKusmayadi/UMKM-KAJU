@@ -17,7 +17,7 @@ class BannersController extends Controller
     {
         $data = Banners::all();
         // dd($data);
-        return view('banner.index')->with('data', $data);
+        return view('backend.banner.index')->with('data', $data);
     }
 
     /**
@@ -25,7 +25,7 @@ class BannersController extends Controller
      */
     public function create()
     {
-        return view('banner.create');
+        return view('backend.banner.create');
     }
 
     /**
@@ -72,7 +72,7 @@ class BannersController extends Controller
     public function edit(string $id)
     {
         $data = Banners::where('id', $id)->first();
-        return view('banner.edit')->with('data', $data);
+        return view('backend.banner.edit')->with('data', $data);
     }
 
     /**

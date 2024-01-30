@@ -29,21 +29,37 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.        ');
 });
 
 Route::resource('/products', ProductsController::class);
 Route::resource('/banners', BannersController::class);
-Route::resource('/about', AboutController::class);
-Route::resource('/footer', FooterController::class);
+Route::resource('/abouts', AboutController::class);
+Route::resource('/footers', FooterController::class);
 
 // Detail
 Route::get('/detail', function () {
-    return view('detail');
+    return view('frontend.detail');
 });
 
 // Shop
 Route::get('/shop', function () {
-    return view('shop');
+    return view('frontend.shop');
+});
+
+Route::get('/about', function () {
+    return view('frontend.about');
+});
+
+Route::get('/success', function () {
+    return view('frontend.pembayaran_berhasil');
+});
+
+Route::get('/account', function () {
+    return view('frontend.akun');
+});
+
+Route::get('/cart', function () {
+    return view('frontend.keranjang');
 });
 require __DIR__ . '/auth.php';

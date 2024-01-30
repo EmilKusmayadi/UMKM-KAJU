@@ -16,7 +16,7 @@ class AboutController extends Controller
     {
         $data = About::all();
         // dd($data);
-        return view('about.index')->with('data', $data);
+        return view('backend.about.index')->with('data', $data);
     }
 
     /**
@@ -24,7 +24,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        return view('about.create');
+        return view('backend.about.create');
     }
 
     /**
@@ -42,7 +42,7 @@ class AboutController extends Controller
             'short_description' => 'required',
             'long_description' => 'required',
             'about_image' => 'required|mimes:png,jpg,jpeg',
-        ],[
+        ], [
             'title.required' => 'wajib di isi',
             'short_title.required' => 'wajib di isi',
             'short_description.required' => 'wajib di isi',
@@ -79,7 +79,7 @@ class AboutController extends Controller
     public function edit(string $id)
     {
         $data = About::where('id', $id)->first();
-        return view('about.edit')->with('data', $data);
+        return view('backend.about.edit')->with('data', $data);
     }
 
     /**
