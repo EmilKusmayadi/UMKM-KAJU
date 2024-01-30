@@ -1,4 +1,4 @@
-<nav class="flex justify-between items-end py-4 px-8">
+<nav class="flex w-full justify-between items-end py-4 px-8 relative">
     <div class="lg:flex items-center gap-x-4 hidden">
         <h3>
             <a href="">Shop</a>
@@ -8,13 +8,15 @@
         </h3>
     </div>
 
-    <h1 class="text-3xl font-bold text-old-gray">
-        <a href="">
-            Kajuu
-        </a>
-    </h1>
+    <div class="absolute w-full h-full flex justify-center items-center top-0 left-0">
+        <h1 class="text-3xl font-bold text-old-gray">
+            <a href="">
+                Kajuu
+            </a>
+        </h1>
+    </div>
 
-    <div class="lg:flex items-center gap-x-8 ml-10 hidden">
+    <div class="lg:flex items-center gap-x-8 hidden">
         <div>
             <a href="#">
                 @include('components.svg.people')
