@@ -18,13 +18,11 @@ export default {
                 'old-gray': '#212121',
                 'green': '#345E5C',
                 'peanut': '#E8C597'
-
             },
             backgroundColor: {
                 'old-gray': '#212121',
                 'green': '#345E5C',
                 'peanut': '#E8C597'
-
             },
             textColor: {
                 'old-gray': '#212121',
