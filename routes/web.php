@@ -62,10 +62,10 @@ Route::get('/cart', function () {
 });
 
 Route::get('/login-admin', function () {
-    return view('');
+    return view('auth.admin-login');
 });
 Route::get('/register-admin', function () {
-    return view('');
+    return view('auth.admin-register');
 });
 require __DIR__ . '/auth.php';
 
