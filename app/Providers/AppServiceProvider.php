@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Models\About;
+use App\Models\Banners;
+use App\Models\Products;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +23,17 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        View::composer('*', function ($view) {
+            $homePage = Banners::orderBy('id', 'desc')->get();
+            $view->with('homePage', $homePage);
+        });
+        View::composer('*', function ($view) {
+            $about = About::orderBy('id', 'desc')->get();
+            $view->with('about', $about);
+        });
+        View::composer('*', function ($view) {
+            $product = Products::orderBy('id', 'desc')->get();
+            $view->with('product', $product);
+        });
     }
 }

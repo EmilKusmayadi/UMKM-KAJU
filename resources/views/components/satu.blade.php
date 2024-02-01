@@ -16,7 +16,7 @@
                 </li>
             </ul>
         </div>
-        <a href="#" class="uppercase border-b-[1px] border-black px-1 font-light text-sm">semua</a>
+        <a href="{{ url('/shop') }}" class="uppercase border-b-[1px] border-black px-1 font-light text-sm">semua</a>
     </div>
 
     <div class="grid justify-between items-center gap-3 grid-cols-2 lg:grid-cols-5">
@@ -24,8 +24,10 @@
         <div class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
 
             <div class="w-40">
-                <img src="{{ asset('image/choy-sum-malabar-spinach-leaf-vegetable-vegetable-9bd9b6b779bb3e1bb3390ca0ac149cc7.png') }}"
-                    alt="">
+                <a href="{{ url('/detail') }}">
+                    <img src="{{ asset('image/choy-sum-malabar-spinach-leaf-vegetable-vegetable-9bd9b6b779bb3e1bb3390ca0ac149cc7.png') }}"
+                        alt="">
+                </a>
             </div>
 
             <div class="flex justify-between items-center w-full">
@@ -46,8 +48,10 @@
         <div class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
 
             <div class="w-40">
-                <img src="{{ asset('image/bell-pepper-stuffed-peppers-food-vegetable-fruit-vegetable-6e2c9c6b8cab99b613caf45b442d1340.png') }}"
-                    alt="">
+                <a href="{{ url('/detail') }}">
+                    <img src="{{ asset('image/bell-pepper-stuffed-peppers-food-vegetable-fruit-vegetable-6e2c9c6b8cab99b613caf45b442d1340.png') }}"
+                        alt="">
+                </a>
             </div>
 
             <div class="flex justify-between items-center w-full">
@@ -68,8 +72,10 @@
         <div class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
 
             <div class="w-40">
-                <img src="{{ asset('image/cherry-tomato-vegetable-pizza-tomato-png-image-picture-download-1576239854cd1f0dbed9d087d0c87744.png') }}"
-                    alt="">
+                <a href="{{ url('/detail') }}">
+                    <img src="{{ asset('image/cherry-tomato-vegetable-pizza-tomato-png-image-picture-download-1576239854cd1f0dbed9d087d0c87744.png') }}"
+                        alt="">
+                </a>
             </div>
 
             <div class="flex justify-between items-center w-full">
@@ -90,8 +96,10 @@
         <div class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
 
             <div class="w-40">
-                <img src="{{ asset('image/romaine-lettuce-leaf-vegetable-salad-leaf-lettuce-vegetable-98bb08e8b78390c60956d2f33ed33afa.png') }}"
-                    alt="">
+                <a href="{{ url('/detail') }}">
+                    <img src="{{ asset('image/romaine-lettuce-leaf-vegetable-salad-leaf-lettuce-vegetable-98bb08e8b78390c60956d2f33ed33afa.png') }}"
+                        alt="">
+                </a>
             </div>
 
             <div class="flex justify-between items-center w-full">
@@ -112,8 +120,10 @@
         <div class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
 
             <div class="w-40">
-                <img src="{{ asset('image/cauliflower-cabbage-vegetable-fruit-food-cauliflower-2f33f5a41d18c5b6041ee7f8bc37683c.png') }}"
-                    alt="">
+                <a href="{{ url('/detail') }}">
+                    <img src="{{ asset('image/cauliflower-cabbage-vegetable-fruit-food-cauliflower-2f33f5a41d18c5b6041ee7f8bc37683c.png') }}"
+                        alt="">
+                </a>
             </div>
 
             <div class="flex justify-between items-center w-full">
@@ -135,8 +145,10 @@
         <div class="lg:hidden bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
 
             <div class="w-40">
-                <img src="{{ asset('image/choy-sum-malabar-spinach-leaf-vegetable-vegetable-9bd9b6b779bb3e1bb3390ca0ac149cc7.png') }}"
-                    alt="">
+                <a href="{{ url('/detail') }}">
+                    <img src="{{ asset('image/choy-sum-malabar-spinach-leaf-vegetable-vegetable-9bd9b6b779bb3e1bb3390ca0ac149cc7.png') }}"
+                        alt="">
+                </a>
             </div>
 
             <div class="flex justify-between items-center w-full">

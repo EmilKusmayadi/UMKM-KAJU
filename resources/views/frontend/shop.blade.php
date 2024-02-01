@@ -4,13 +4,15 @@
         <div class="mx-[30px]">
             <div class="flex justify-between">
                 <div class="font-medium">
-                    <h1 class="text-[22px] md:text-[45px] lg:text-[60px] mt-20">Keajaiban dunia <br> sayuran hidroponik
+                    <h1 class="text-[22px] md:text-[45px] lg:text-[60px] mt-10 md:mt-20">Keajaiban dunia <br> sayuran
+                        hidroponik
                     </h1>
                 </div>
                 <div class="md:flex md:mt-16 lg:mt-28 hidden">
-                    <button
-                        class="md:w-[140px] lg:w-[208px] md:h-[52px] bg-[#345E5C] text-white rounded-[10px] md:me-4 lg:me-4 md:block md:text-xs lg:text-lg mt-20">Tentang
-                        Kami</button>
+                    <a href="{{ url('/about') }}"
+                        class="md:w-[140px] lg:w-[208px] h-[54px] bg-[#345E5C] text-white rounded-[10px] md:me-4 lg:me-4 md:text-xs lg:text-lg mt-20 flex justify-center items-center">
+                        Tentang Kami
+                    </a>
                     <button
                         class="md:w-[140px] lg:w-[208px] md:h-[52px] bg-[#E8C597] text-black rounded-[10px] md:block md:text-xs lg:text-lg mt-20">Selengkapnya</button>
                 </div>
@@ -28,9 +30,9 @@
                 </div>
             </div>
             <div class="md:hidden lg:mt-28 my-5 flex justify-center">
-                <button
-                    class="w-[100px] md:w-[140px] lg:w-[208px] h-[35px] lg:h-[52px] bg-[#345E5C] text-white rounded-[5px] me-4 lg:me-4 md:block md:text-xs lg:text-lg text-[12px]">Tentang
-                    Kami</button>
+                <a href="{{ url('/about') }}"
+                    class="w-[100px] md:w-[140px] lg:w-[208px] h-[35px] lg:h-[52px] bg-[#345E5C] text-white rounded-[5px] me-4 lg:me-4 md:block md:text-xs lg:text-lg text-[12px] flex justify-center items-center">Tentang
+                    Kami</a>
                 <button
                     class="w-[100px] md:w-[140px] lg:w-[208px] h-[35px] lg:h-[52px] bg-[#E8C597] text-black rounded-[5px] md:block md:text-xs lg:text-lg text-[12px]">Selengkapnya</button>
             </div>
@@ -41,7 +43,7 @@
                     class="w-[61px] md:w-[140px] lg:w-[208px] md:h-[47px] lg:h-[52px] border border-[#E8C597] text-black rounded-[5px] md:block md:text-xs lg:text-lg text-[12px]">Promo</button>
             </div>
             <div class="">
-                <div class="flex justify-around mt-10 ms-[7rem]">
+                <div class="hidden lg:flex justify-around mt-10 ms-[7rem]">
                     <div class="bg-[#E8C597] w-[303px] h-[400px] rounded-[20px]">
                         <h1 class="font-bold text-[32px] mt-12 mb-8 ms-[70px]">Kategori</h1>
                         <div class="ms-[70px]">
@@ -77,7 +79,7 @@
                                                 <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                             </div>
                                             <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                                <a href="#">
+                                                <a href="{{ url('/cart') }}">
                                                     <svg width="18" height="18" viewBox="0 0 24 24"
                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -101,7 +103,7 @@
                                                 <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                             </div>
                                             <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                                <a href="#">
+                                                <a href="{{ url('/cart') }}">
                                                     <svg width="18" height="18" viewBox="0 0 24 24"
                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -125,7 +127,7 @@
                                                 <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                             </div>
                                             <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                                <a href="#">
+                                                <a href="{{ url('/cart') }}">
                                                     <svg width="18" height="18" viewBox="0 0 24 24"
                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -149,7 +151,7 @@
                                                 <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                             </div>
                                             <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                                <a href="#">
+                                                <a href="{{ url('/cart') }}">
                                                     <svg width="18" height="18" viewBox="0 0 24 24"
                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -178,7 +180,7 @@
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                            <a href="#">
+                                            <a href="{{ url('/cart') }}">
                                                 <svg width="18" height="18" viewBox="0 0 24 24"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -202,7 +204,7 @@
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                            <a href="#">
+                                            <a href="{{ url('/cart') }}">
                                                 <svg width="18" height="18" viewBox="0 0 24 24"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -226,7 +228,7 @@
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                            <a href="#">
+                                            <a href="{{ url('/cart') }}">
                                                 <svg width="18" height="18" viewBox="0 0 24 24"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -250,7 +252,7 @@
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                            <a href="#">
+                                            <a href="{{ url('/cart') }}">
                                                 <svg width="18" height="18" viewBox="0 0 24 24"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -278,7 +280,7 @@
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                            <a href="#">
+                                            <a href="{{ url('/cart') }}">
                                                 <svg width="18" height="18" viewBox="0 0 24 24"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -302,7 +304,7 @@
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                            <a href="#">
+                                            <a href="{{ url('/cart') }}">
                                                 <svg width="18" height="18" viewBox="0 0 24 24"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -326,7 +328,7 @@
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                            <a href="#">
+                                            <a href="{{ url('/cart') }}">
                                                 <svg width="18" height="18" viewBox="0 0 24 24"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -350,7 +352,7 @@
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
-                                            <a href="#">
+                                            <a href="{{ url('/cart') }}">
                                                 <svg width="18" height="18" viewBox="0 0 24 24"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -370,8 +372,196 @@
                     </div>
                 </div>
             </div>
-            @include('components.empat')
+            {{-- mobile --}}
+            <div class="text-old-gray w-full lg:hidden flex flex-col gap-y-10 mt-10">
+                <div class="w-full flex justify-between items-end">
+                    <div class="bg-peanut px-3 md:px-12 py-3 rounded-lg">
+                        <ul class="flex gap-x-6 text-[14px] md:text-lg">
+                            <li class="font-bold">
+                                <a href="">All</a>
+                            </li>
+                            <li class="font-light">
+                                <a href="">Sayur</a>
+                            </li>
+                            <li class="font-light">
+                                <a href="#">Buah</a>
+                            </li>
+                            <li class="font-light">
+                                <a href="#">Bumbu</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="uppercase border-b-[1px] border-black px-1 font-light text-sm">semua</a>
+                </div>
+
+                <div class="grid justify-between items-center gap-3 grid-cols-2 lg:grid-cols-5">
+                    <div
+                        class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
+                        <div class="w-40">
+                            <img src="{{ asset('image/choy-sum-malabar-spinach-leaf-vegetable-vegetable-9bd9b6b779bb3e1bb3390ca0ac149cc7.png') }}"
+                                alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h2 class="text-xl font-normal">Bayam</h2>
+                                <p class="font-light text-[#9AAF43]">Rp.5000</p>
+                            </div>
+                            <div class="h-9 w-9 grid place-items-center rounded-xl bg-peanut">
+                                <a href="#">
+                                    @include('components.svg.small-cart')
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
+                        <div class="w-40">
+                            <img src="{{ asset('image/bell-pepper-stuffed-peppers-food-vegetable-fruit-vegetable-6e2c9c6b8cab99b613caf45b442d1340.png') }}"
+                                alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h2 class="text-xl font-normal">Paprika</h2>
+                                <p class="font-light text-[#9AAF43]">Rp.5000</p>
+                            </div>
+                            <div class="h-9 w-9 grid place-items-center rounded-xl bg-peanut">
+                                <a href="#">
+                                    @include('components.svg.small-cart')
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
+                        <div class="w-40">
+                            <img src="{{ asset('image/cherry-tomato-vegetable-pizza-tomato-png-image-picture-download-1576239854cd1f0dbed9d087d0c87744.png') }}"
+                                alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h2 class="text-xl font-normal">Tomat</h2>
+                                <p class="font-light text-[#9AAF43]">Rp.5000</p>
+                            </div>
+                            <div class="h-9 w-9 grid place-items-center rounded-xl bg-peanut">
+                                <a href="#">
+                                    @include('components.svg.small-cart')
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
+                        <div class="w-40">
+                            <img src="{{ asset('image/romaine-lettuce-leaf-vegetable-salad-leaf-lettuce-vegetable-98bb08e8b78390c60956d2f33ed33afa.png') }}"
+                                alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h2 class="text-xl font-normal">Selada</h2>
+                                <p class="font-light text-[#9AAF43]">Rp.5000</p>
+                            </div>
+                            <div class="h-9 w-9 grid place-items-center rounded-xl bg-peanut">
+                                <a href="#">
+                                    @include('components.svg.small-cart')
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
+                        <div class="w-40">
+                            <img src="{{ asset('image/cauliflower-cabbage-vegetable-fruit-food-cauliflower-2f33f5a41d18c5b6041ee7f8bc37683c.png') }}"
+                                alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h2 class="text-xl font-normal">Kembang Kol</h2>
+                                <p class="font-light text-[#9AAF43]">Rp.5000</p>
+                            </div>
+                            <div class="h-9 w-9 grid place-items-center rounded-xl bg-peanut">
+                                <a href="#">
+                                    @include('components.svg.small-cart')
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- hilang 1 (hidden kalo desktop) --}}
+                    <div
+                        class="lg:hidden bg-white p-5 h-[17rem] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
+                        <div class="w-40">
+                            <img
+                                src="{{ asset('image/choy-sum-malabar-spinach-leaf-vegetable-vegetable-9bd9b6b779bb3e1bb3390ca0ac149cc7.png') }}"alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h2 class="text-xl font-normal">Bayam</h2>
+                                <p class="font-light text-[#9AAF43]">Rp.5000</p>
+                            </div>
+                            <div class="h-9 w-9 grid place-items-center rounded-xl bg-peanut">
+                                <a href="#">
+                                    @include('components.svg.small-cart')
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        @include('components.tiga')@include('components.footer')
+        <div class="">
+            <div class="bg-green h-[106vh] md:[60vh] px-8 items-center gap-y-10 mt-10">
+                <div class="w-full flex justify-between items-center text-white pt-10">
+                    <h1 class="font-bold text-2xl">Penawaran Spesial</h1>
+                    <a href="#" class="uppercase border-b-[1px] border-white px-1 font-light">semua</a>
+                </div>
+                <div
+                    class="w-full h-[60vh] max-h-fit grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-x-5 mt-10">
+                    <div
+                        class="bg-[#D9F2F9] px-5 py-8 rounded-xl w-full h-full flex flex-col justify-between relative mb-7 md:mb-0">
+                        <div class="text-old-gray flex flex-col gap-y-8">
+                            <p class="font-bold text-black">Bundle</p>
+                            <h1 class="text-2xl md:text-4xl font-semibold leading-8">Belanja lebih <br> hemat dan lebih
+                                <br>puas
+                            </h1>
+                            <p class="text-xs md:text-lg">Mulai dari Rp.3000 per kg</p>
+                        </div>
+                        <div class="">
+                            <a href="#">
+                                <button
+                                    class="bg-green px-3 md:px-6 py-2 text-white font-light rounded-lg text-sm">Beli
+                                    Sekarang</button>
+                            </a>
+                        </div>
+                        <div class="w-44 md:w-80 self-end absolute bottom-10 md:bottom-0">
+                            <img src="{{ asset('image/organic-food-juice-vegetable-fruit-basket-vegetable-png-photos-6d5e358490722e7b06e5f983ba54fbb0.png') }}"
+                                alt="">
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#D8EBE5] px-5 py-8 rounded-xl w-full h-full flex flex-col justify-between relative">
+                        <div class="text-old-gray flex flex-col gap-y-8">
+                            <p class="font-bold text-black">Promo</p>
+                            <h1 class="text-2xl md:text-4xl font-semibold leading-8">Penawaran<br> Menarik</h1>
+                            <p class="text-xs mb-3 md:text-lg">Info lebih lanjut</p>
+                        </div>
+                        <div class="">
+                            <a href="#">
+                                <button class="bg-green px-3 md:px-6 py-2 text-white font-light rounded-lg text-sm">Cek
+                                    Sekarang</button>
+                            </a>
+                        </div>
+                        <div class="w-44 sm:w-55 md:w-80 self-end absolute bottom-0">
+                            <img src="{{ asset('image/fruit-supermarket-vegetable-auglis-supermarket-shelf-water-aaf86a1d356a5514c189d7f7ad03eea1.png') }}"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @include('components.footer')
     </div>
 </x-app-layout>

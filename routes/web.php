@@ -18,14 +18,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -37,12 +29,18 @@ Route::resource('/banners', BannersController::class);
 Route::resource('/abouts', AboutController::class);
 Route::resource('/footers', FooterController::class);
 
-// Detail
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
 Route::get('/detail', function () {
     return view('frontend.detail');
 });
 
-// Shop
 Route::get('/shop', function () {
     return view('frontend.shop');
 });
@@ -63,3 +61,8 @@ Route::get('/cart', function () {
     return view('frontend.keranjang');
 });
 require __DIR__ . '/auth.php';
+
+
+// ->middleware(['auth', 'verified']);
+
+// ->middleware(['auth', 'verified'])->name('dashboard');

@@ -13,9 +13,9 @@ class FooterController extends Controller
      */
     public function index()
     {
-        $data = Footer::all();
-        // dd($data);
-        return view('backend.footer.index')->with('data', $data);
+        $footer = Footer::all();
+        // dd($footer);
+        return view('backend.footer.index')->with('footer', $footer);
     }
 
     /**
@@ -65,7 +65,7 @@ class FooterController extends Controller
             'copyright' => $request->input('copyright'),
         ];
         Footer::create($data);
-        return redirect('footer')->with('success', 'Berhasil Memasukkan Data');
+        return redirect('footers')->with('success', 'Berhasil Memasukkan Data');
     }
 
     /**
@@ -117,7 +117,7 @@ class FooterController extends Controller
             'copyright' => $request->input('copyright'),
         ];
         Footer::where('id', $id)->update($data);
-        return redirect('/footer')->with('success', 'Berhasil Update Data');
+        return redirect('/footers')->with('success', 'Berhasil Update Data');
     }
 
     /**
@@ -127,6 +127,6 @@ class FooterController extends Controller
     {
         $data = Footer::where('id', $id)->first();
         Footer::where('id', $id)->delete();
-        return redirect('footer')->with('data', $data);
+        return redirect('footers')->with('data', $data);
     }
 }

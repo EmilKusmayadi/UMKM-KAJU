@@ -15,9 +15,9 @@ class BannersController extends Controller
      */
     public function index()
     {
-        $data = Banners::all();
-        // dd($data);
-        return view('backend.banner.index')->with('data', $data);
+        $homePage = Banners::orderBy('id', 'desc')->get();
+
+        return view('backend.banner.index', compact('homePage'));
     }
 
     /**

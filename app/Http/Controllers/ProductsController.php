@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\products;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Session;
 
 class ProductsController extends Controller
@@ -59,7 +60,7 @@ class ProductsController extends Controller
             'discount_price' => 'required',
             'short_descp_ind' => 'required',
             'long_descp_ind' => 'required',
-            'product_thumbnail' => 'required',
+            'product_thumbnail' => 'required|mimes:png,jpg,jpeg',
             'hot_deals' => 'required|integer',
             'featured' => 'required|integer',
             'special_offer' => 'required|integer',
@@ -78,12 +79,17 @@ class ProductsController extends Controller
             'short_descp_ind.required' => 'wajib di isi',
             'long_descp_ind.required' => 'wajib di isi',
             'product_thumbnail.required' => 'wajib di isi',
+            'product_thumbnail.mimes' => 'gambar hanya di perbolehkan type filenya png.jgp.jpeg',
             'hot_deals.required' => 'wajib di isi',
             'featured.required' => 'wajib di isi',
             'special_offer.required' => 'wajib di isi',
             'special_deals.required' => 'wajib di isi',
             'status.required' => 'wajib di isi',
         ]);
+        $foto_file = $request->file('product_thumbnail');
+        $foto_extensi = $foto_file->extension();
+        $foto_nama = date('ymdhis') . '.' . $foto_extensi;
+        $foto_file->move(public_path('product_thumbnail'), $foto_nama);
 
         $data = [
             'product_name_ind' => $request->input('product_name_ind'),
@@ -97,7 +103,7 @@ class ProductsController extends Controller
             'discount_price' => $request->input('discount_price'),
             'short_descp_ind' => $request->input('short_descp_ind'),
             'long_descp_ind' => $request->input('long_descp_ind'),
-            'product_thumbnail' => $request->input('product_thumbnail'),
+            'product_thumbnail' =>  $foto_nama,
             'hot_deals' => $request->input('hot_deals'),
             'featured' => $request->input('featured'),
             'special_offer' => $request->input('special_offer'),
@@ -142,7 +148,6 @@ class ProductsController extends Controller
             'discount_price' => 'required',
             'short_descp_ind' => 'required',
             'long_descp_ind' => 'required',
-            'product_thumbnail' => 'required',
             'hot_deals' => 'required|integer',
             'featured' => 'required|integer',
             'special_offer' => 'required|integer',
@@ -160,13 +165,16 @@ class ProductsController extends Controller
             'discount_price.required' => 'wajib di isi',
             'short_descp_ind.required' => 'wajib di isi',
             'long_descp_ind.required' => 'wajib di isi',
-            'product_thumbnail.required' => 'wajib di isi',
             'hot_deals.required' => 'wajib di isi',
             'featured.required' => 'wajib di isi',
             'special_offer.required' => 'wajib di isi',
             'special_deals.required' => 'wajib di isi',
             'status.required' => 'wajib di isi',
         ]);
+        $foto_file = $request->file('product_thumbnail');
+        $foto_extensi = $foto_file->extension();
+        $foto_nama = date('ymdhis') . '.' . $foto_extensi;
+        $foto_file->move(public_path('product_thumbnail'), $foto_nama);
 
         $data = [
             'product_name_ind' => $request->input('product_name_ind'),
@@ -180,13 +188,28 @@ class ProductsController extends Controller
             'discount_price' => $request->input('discount_price'),
             'short_descp_ind' => $request->input('short_descp_ind'),
             'long_descp_ind' => $request->input('long_descp_ind'),
-            'product_thumbnail' => $request->input('product_thumbnail'),
             'hot_deals' => $request->input('hot_deals'),
             'featured' => $request->input('featured'),
             'special_offer' => $request->input('special_offer'),
             'special_deals' => $request->input('special_deals'),
             'status' => $request->input('status'),
         ];
+        if ($request->hasFile('product_thumbnail')) {
+            $request->validate([
+                'product_thumbnail' => 'mimes:png,jpg,jpeg'
+            ], [
+                'product_thumbnail.mimes' => 'Foto hanya di perbolehkan type filenya png.jgp.jpeg'
+            ]);
+            $foto_file = $request->file('product_thumbnail');
+            $foto_extensi = $foto_file->extension();
+            $foto_nama = date('ymdhis') . '.' . $foto_extensi;
+            $foto_file->move(public_path('product_thumbnail'), $foto_nama);
+
+            $data_foto = products::where('id', $id)->first();
+            File::delete(public_path('product_thumbnail') . '/' . $data_foto->product_thumbnail);
+
+            $data['product_thumbnail'] = $foto_nama;
+        }
         products::where('id', $id)->update($data);
         return redirect('/products')->with('success', 'Berhasil Update data');
     }

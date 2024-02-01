@@ -1,10 +1,10 @@
 <footer class="w-full bg-peanut flex justify-between items-end px-6 pt-8 pb-12">
     <div class="text-black pr-5 text-sm md:text-2xl">@2024</div>
-    <div class="flex flex-col justify-between items-center gap-y-16">
+    <div class="w-full flex flex-col justify-between items-center md:gap-y-16">
         <div>
-            <ul class="flex md:gap-x-5 text-old-gray text-sm md:text-lg">
-                <li><a href="#" class="pe-3 md:pe-0">Shop</a></li>
-                <li><a href="#" class="pe-3 md:pe-0">Tentang Kami</a></li>
+            <ul class="flex md:gap-x-5 text-old-gray text-sm md:text-lg mb-5 md:mb-0">
+                <li><a href="{{ url('/shop') }}" class="pe-3 md:pe-0">Shop</a></li>
+                <li><a href="{{ url('/about') }}" class="pe-3 md:pe-0">Tentang Kami</a></li>
                 <li><a href="#">Kontak</a></li>
             </ul>
         </div>

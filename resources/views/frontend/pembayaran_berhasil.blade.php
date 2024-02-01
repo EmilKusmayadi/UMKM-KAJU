@@ -1,12 +1,13 @@
 <x-app-layout>
     @include('components.nav')
     <div class="text-center">
-        <div class="mt-6">
-            <h1 class="text-6xl">Pembayaran Berhasil</h1>
+        <div class="mt-16 mb-14 md:mb-0 md:mt-6">
+            <h1 class="text-2xl md:text-6xl">Pembayaran Berhasil</h1>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center mb-28 md:mb-0">
             <img src="{{ asset('../image/sapiens.png') }}" alt="" class="w-[522px]">
-            <button class="bg-[#064E3B] text-white px-8 py-1 rounded-full absolute bottom-4">Home</button>
+            <a href="{{ url('/') }}"
+                class="bg-[#064E3B] text-white px-8 py-1 rounded-full absolute top-[82%] md:top-[89%]">Home</a>
         </div>
     </div>
     @include('components.footer')

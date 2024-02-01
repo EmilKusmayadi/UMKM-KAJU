@@ -14,7 +14,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $data = About::all();
+        $data = About::orderBy('id', 'desc')->get();
         // dd($data);
         return view('backend.about.index')->with('data', $data);
     }
@@ -62,7 +62,7 @@ class AboutController extends Controller
             'about_image' =>  $foto_nama,
         ];
         About::create($data);
-        return redirect('about')->with('success', 'Berhasil Memasukkan Data');
+        return redirect('abouts')->with('success', 'Berhasil Memasukkan Data');
     }
 
     /**
@@ -124,7 +124,7 @@ class AboutController extends Controller
             $data['about_image'] = $foto_nama;
         }
         About::where('id', $id)->update($data);
-        return redirect('/about')->with('success', 'Berhasil Update Data');
+        return redirect('/abouts')->with('success', 'Berhasil Update Data');
     }
 
     /**
@@ -135,6 +135,6 @@ class AboutController extends Controller
         $data = About::where('id', $id)->first();
         File::delete(public_path('about_image') . '/' . $data->about_image);
         About::where('id', $id)->delete();
-        return redirect('about')->with('data', $data);
+        return redirect('abouts')->with('data', $data);
     }
 }
