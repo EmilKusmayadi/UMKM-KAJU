@@ -15,7 +15,6 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans bg-[#F8F3EC] text-gray-900 antialiased overflow-hidden">
-        @include('components.responsive-nav')
 
         {{ $slot }}
     </body>
