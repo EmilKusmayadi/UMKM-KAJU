@@ -113,12 +113,6 @@
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                             data-accordion="false">
                             <li class="nav-item">
-                                <a href="{{ url('/dashboard') }}" class="nav-link ">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Dashboard</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
                                 <a href="{{ url('/banners') }}" class="nav-link">
                                     <i class="nav-icon fas fa-th"></i>
                                     <p>
@@ -200,8 +194,7 @@
                     <div class="container-fluid">
                         <div class="max-w-4xl mx-auto bg-white p-6 rounded-md shadow-md ">
                             <a href="/footers" class="btn btn-secondary">Kembali</a>
-                            <form action="{{ '/footers/' . $data->id }}" method="POST"
-                                enctype="multipart/form-data"
+                            <form action="{{ '/footers/' . $data->id }}" method="POST" enctype="multipart/form-data"
                                 class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
                                 @csrf
                                 @method('PUT')

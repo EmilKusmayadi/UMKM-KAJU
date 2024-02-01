@@ -60,6 +60,13 @@ Route::get('/account', function () {
 Route::get('/cart', function () {
     return view('frontend.keranjang');
 });
+
+Route::get('/login-admin', function () {
+    return view('');
+});
+Route::get('/register-admin', function () {
+    return view('');
+});
 require __DIR__ . '/auth.php';
 
 

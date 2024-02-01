@@ -9,13 +9,15 @@
             <div class="md:mt-16 md:mb-7 md:text-xl hidden md:block">
                 <p>{{ $about->first()->short_title }}</p>
             </div>
-            <div class="mb-10 md:mb-0 mt-5 block md:hidden">
+            <div class="mb-6 md:mb-0 mt-5 block md:hidden">
                 <p class="">{{ $about->first()->short_title }}</p>
             </div>
         </div>
-        <div class="mb-20 md:mb-0">
+        <div class="relative overflow-hidden flex justify-center items-center h-[40vh] md:h-[58vh] w-full">
             <img src="{{ url('about_image') . '/' . $about->first()->about_image }}" alt=""
-                class="w-full h-52 md:h-[20rem] bg-cover">
+                class="absolute -scale-x-100 w-full h-[250px] block bg-cover md:hidden">
+            <img src="{{ url('about_image') . '/' . $about->first()->about_image }}" alt=""
+                class="absolute -scale-x-100 w-full hidden md:block">
         </div>
         {{-- END HERO --}}
         {{-- START KEISTIMEWAAN --}}
@@ -131,7 +133,8 @@
                     </div>
                 </div>
                 <div class="rounded-2xl overflow-hidden w-[40vw]">
-                    <img src="{{ asset('image/getty-images-TXgvWNoxNls-unsplash.jpg') }}" class="" alt="">
+                    <img src="{{ asset('image/getty-images-TXgvWNoxNls-unsplash.jpg') }}" class=""
+                        alt="">
                 </div>
             </div>
         </div>
