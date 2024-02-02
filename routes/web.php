@@ -61,9 +61,14 @@ Route::get('/cart', function () {
     return view('frontend.keranjang');
 })->middleware(['auth', 'verified']);
 
+Route::get('/promo', function () {
+    return view('frontend.promo');
+})->middleware(['auth', 'verified']);
+
 Route::get('/login-admin', function () {
     return view('auth.admin-login');
 })->middleware(['auth', 'verified']);
+
 Route::get('/register-admin', function () {
     return view('auth.admin-register');
 })->middleware(['auth', 'verified']);
