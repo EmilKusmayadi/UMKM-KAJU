@@ -7,7 +7,7 @@
         <div class="flex justify-center mb-28 md:mb-0">
             <img src="{{ asset('../image/sapiens.png') }}" alt="" class="w-[522px]">
             <a href="{{ url('/') }}"
-                class="bg-[#064E3B] text-white px-8 py-1 rounded-full absolute top-[82%] md:top-[89%]">Home</a>
+                class="bg-[#064E3B] text-white px-8 py-1 rounded-full absolute top-[82%] md:top-[92%]">Home</a>
         </div>
     </div>
     @include('components.footer')

@@ -13,7 +13,7 @@ class FooterController extends Controller
      */
     public function index()
     {
-        $footer = Footer::all();
+        $footer = Footer::orderBy('id', 'desc')->get();
         // dd($footer);
         return view('backend.footer.index')->with('footer', $footer);
     }
