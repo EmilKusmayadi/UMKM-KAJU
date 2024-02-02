@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.        ');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.');
 });
 
 Route::resource('/products', ProductsController::class);
@@ -31,42 +31,42 @@ Route::resource('/footers', FooterController::class);
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/detail', function () {
     return view('frontend.detail');
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/shop', function () {
     return view('frontend.shop');
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/about', function () {
     return view('frontend.about');
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/success', function () {
     return view('frontend.pembayaran_berhasil');
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/account', function () {
     return view('frontend.akun');
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/cart', function () {
     return view('frontend.keranjang');
-});
+})->middleware(['auth', 'verified']);
 
 Route::get('/login-admin', function () {
     return view('auth.admin-login');
-});
+})->middleware(['auth', 'verified']);
 Route::get('/register-admin', function () {
     return view('auth.admin-register');
-});
+})->middleware(['auth', 'verified']);
 require __DIR__ . '/auth.php';
 
 

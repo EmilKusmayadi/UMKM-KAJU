@@ -27,19 +27,23 @@
 
                 <div class="flex flex-col gap-y-5">
                     <div class="flex gap-x-4">
-                        <button type="submit" class="bg-[#E8C597] w-32 font-semibold text-sm py-1 rounded-md">Login</button>
+                        <button type="submit"
+                            class="bg-[#E8C597] w-32 font-semibold text-sm py-1 rounded-md">Login</button>
                         <button class="border border-[#E8C597] w-36 font-thin text-sm py-1 rounded-md">Forgot
                             Password
                         </button>
                     </div>
 
-                    <button type="submit" class="lg:hidden bg-[#345E5C] w-full rounded-lg text-white py-2 font-thin">Register</button>
+                    <button type="submit"
+                        class="lg:hidden bg-[#345E5C] w-full rounded-lg text-white py-2 font-thin">Register</button>
                 </div>
             </form>
         </div>
 
-        <div class="opacity-20 lg:opacity-100 w-full h-full bg-cover bg-center p-4 flex justify-end items-start absolute lg:static top-0 left-0" style="background-image: url('{{ asset('image/login.png') }}');">
-            <a href="/register" class="hidden lg:flex px-8 py-1 rounded-lg border border-white/45 text-white font-thin">Register</a>
+        <div class="opacity-20 lg:opacity-100 w-full h-full bg-cover bg-center p-4 flex justify-end items-start absolute lg:static top-0 left-0"
+            style="background-image: url('{{ asset('image/login.png') }}');">
+            <a href="/register"
+                class="hidden lg:flex px-8 py-1 rounded-lg border border-white/45 text-white font-thin">Register</a>
         </div>
     </div>
 </x-guest-layout>

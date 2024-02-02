@@ -171,10 +171,6 @@ class ProductsController extends Controller
             'special_deals.required' => 'wajib di isi',
             'status.required' => 'wajib di isi',
         ]);
-        $foto_file = $request->file('product_thumbnail');
-        $foto_extensi = $foto_file->extension();
-        $foto_nama = date('ymdhis') . '.' . $foto_extensi;
-        $foto_file->move(public_path('product_thumbnail'), $foto_nama);
 
         $data = [
             'product_name_ind' => $request->input('product_name_ind'),
