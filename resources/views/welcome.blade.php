@@ -15,19 +15,19 @@
 <body class="bg-[#F5F5F5]">
     @include('components.responsive-nav')
 
-    <main class="px-8">
-        <div class="relative mt-4 rounded-2xl overflow-hidden flex justify-center items-center h-[85vh]">
-            @if ($homePage->first()->banner_image)
+    <main class="px-3 lg:px-8">
+        <div class="relative mt-4 rounded-2xl overflow-hidden flex justify-center items-center bg-cover bg-center bg-no-repeat h-72 lg:h-[85vh]" style="background-image: url({{ url('banner_image') . '/' . $homePage->first()->banner_image }});">
+            {{-- @if ($homePage->first()->banner_image)
                 <img src="{{ url('banner_image') . '/' . $homePage->first()->banner_image }}" alt="olive-strauss"
                     class="absolute -scale-x-100">
             @else
                 <h1>TIDAK ADA GAMBAR!</h1>
-            @endif
-            <div class="z-10 w-full h-full flex flex-col justify-end p-16 space-y-10">
-                <h1 class="text-7xl font-semibold text-white">{{ $homePage->first()->banner_title }}</h1>
-                <p class="text-sm text-white w-72">Dengan bangga menawarkan sayuran hidroponik tanpa pestisida</p>
+            @endif --}}
+            <div class="z-10 w-full h-full flex flex-col items-center lg:items-start justify-end pb-8 lg:p-16 space-y-4 lg:space-y-10">
+                <h1 class="text-3xl lg:text-7xl text-white text-center font-bold lg:font-semibold lg:leading-tight lg:text-left w-52 lg:w-[26rem]">{{ $homePage->first()->banner_title }}</h1>
+                <p class="text-xs text-center w-60 lg:text-left lg:text-sm text-white lg:w-72">Dengan bangga menawarkan sayuran hidroponik tanpa pestisida</p>
                 <a href="{{ url('/about') }}">
-                    <button class="bg-green px-6 py-2 text-white font-light rounded-lg">Selengkapnya</button>
+                    <button class="text-xs lg:text-base bg-green px-6 py-2 text-white font-light rounded-lg">Selengkapnya</button>
                 </a>
             </div>
         </div>
