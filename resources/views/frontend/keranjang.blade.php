@@ -1,9 +1,9 @@
 <x-app-layout>
-    @include('components.nav')
-    <div class="mx-8">
-        <h1 class="text-2xl my-10">Keranjang Belanja</h1>
-        <div class="md:flex">
-            <div class="md:w-[754px] pb-6 md:pb-0 md:h-[449px] border border-black rounded-lg">
+    @include('components.responsive-nav')
+    <div class="mx-4 lg:mx-8">
+        <h1 class="text-2xl mt-10 mb-5">Keranjang Belanja</h1>
+        <div class="md:flex gap-x-10">
+            <div class="md:w-full pb-6 md:pb-0 md:h-[449px] border border-black rounded-lg">
                 <div class="flex justify-evenly md:justify-around">
                     <div class="">
                         <p class="mt-5 text-sm md:text-xl">Name</p>
@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="">
-                        <p class="mt-5 text-sm md:text-xl">Total</p>
+                        <p class="mt-5 text-sm text-center md:text-xl">Total</p>
                         <div class=" mt-10 md:mt-14">
                             <p class="text-xs md:text-sm">Rp.20.000</p>
                         </div>
@@ -86,10 +86,10 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full mt-10 md:mt-0 md:w-[420px] h-[448px] border border-black rounded-lg md:ms-10">
+            <div class="w-full mt-6 md:mt-0 md:w-[35rem] h-[448px] border border-black rounded-lg">
                 <div class="">
                     <div class="mt-5">
-                        <p class="ms-14 text-xl">Total Belanja</p>
+                        <p class="ms-6 lg:ms-14 text-xl">Total Belanja</p>
                     </div>
                     <div class="flex justify-evenly mt-10">
                         <button class="border border-black rounded-full py-1 px-5">Discount Number</button>
@@ -119,30 +119,25 @@
         </div>
 
         <div class="pb-10">
-            <h1 class="text-2xl mt-10 md:mt-10 md:mb-10">Pilih Pembayaran</h1>
-            <div class="md:flex">
-                <div class="mt-5 md:mt-20">
-                    <div class="">
-                        <button class="border border-black rounded-lg py-1 ps-5 md:pe-60 pe-8 md:py-5">Transfer
-                            Bank</button>
-                        <button
-                            class="border border-black rounded-lg py-1 ps-5 md:pe-[19.7rem] ms-4 pe-24 md:py-5">QRIS</button>
-                    </div>
-                    <div class="mt-4">
-                        <button
-                            class="border border-black rounded-lg py-1 ps-5 md:pe-[17rem] pe-16 md:py-5">Alfamart</button>
-                        <button
-                            class="border border-black rounded-lg py-1 ps-5 md:pe-[19.3rem] ms-5 md:ms-4 pe-[84px] md:py-5">Paypal</button>
-                    </div>
+            <h1 class="text-2xl mt-10 md:mt-6">Pilih Pembayaran</h1>
+            <div class="md:flex items-end w-full lg:gap-x-8 mt-5 lg:mt-0">
+
+                <div class="grid grid-cols-2 gap-y-4 lg:gap-y-6 gap-x-3 lg:gap-x-5 w-full">
+                    <button class="border text-start h-fit border-black rounded-lg text-sm lg:text-base py-2 md:py-4 px-4 lg:px-10">Transfer
+                        Bank</button>
+                    <button class="border text-start h-fit w-full border-black rounded-lg text-sm lg:text-base py-2 md:py-4 px-4 lg:px-10">
+                        Alfamart</button>
+                    <button class="border text-start h-fit w-full border-black rounded-lg text-sm lg:text-base py-2 md:py-4 px-4 lg:px-10">QRIS</button>
+                    <button class="border text-start h-fit w-full border-black rounded-lg text-sm lg:text-base py-2 md:py-4 px-4 lg:px-10">Paypal</button>
                 </div>
-                <div class="border border-black rounded-lg py-2 md:w-[420px] md:ms-8 mt-10 md:0">
-                    <p class="ms-7 md:ms-12 my-5 font-semibold">Kode Alfamart</p>
-                    <div class="flex justify-around">
+                <div class="border border-black rounded-lg py-2 lg:min-w-[23rem] md:min-w-96 px-8 mt-6 lg:mt-10">
+                    <p class="my-5 font-semibold">Kode Alfamart</p>
+                    <div class="flex justify-between w-full gap-x-6 text-sm lg:text-base">
                         <div class="">
                             <p class="pb-3">Code</p>
                             <p>Sisa Waktu</p>
                         </div>
-                        <div class="pb-5">
+                        <div class="pb-5 lg:text-end">
                             <p class="pb-3">ZVJGH10000789</p>
                             <p>23:50</p>
                         </div>

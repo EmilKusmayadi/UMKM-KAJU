@@ -1,5 +1,5 @@
 <x-app-layout>
-    @include('components.nav')
+    @include('components.responsive-nav')
     <div class="mx-[2rem] ">
         {{-- START HERO --}}
         <div class="md:flex justify-between mt-14 md:mt-5">
@@ -147,6 +147,6 @@
         {{--  END jangka waktu --}}
     </div>
     {{-- START FOOTER --}}
-    @include('components.footer')
+    @include('components.responsive-footer')
     {{-- END FOOTER --}}
 </x-app-layout>
