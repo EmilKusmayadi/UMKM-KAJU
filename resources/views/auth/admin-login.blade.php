@@ -19,14 +19,15 @@
                     <div class="flex flex-col w-full">
                         @csrf
 
-                        <label for="Email">Email</label>
-                        <input type="email" id="Email" name="email" :value="old('email')" required autofocus
-                            autocomplete="username"
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" :value="old('email')" required autofocus
+                            autocomplete="username" placeholder="Your Email"
                             class="bg-transparent outline-none border-b border-transparent border-b-black">
                         <x-input-error :messages="$errors->get('email')" class="mt-2" />
 
-                        <label for="Password" class="mt-5">Password</label>
-                        <input type="password" name="password" required autocomplete="current-password" id="Password"
+                        <label for="password" class="mt-5">Password</label>
+                        <input type="password" name="password" required autocomplete="current-password" id="password"
+                            placeholder="Your Password"
                             class="bg-transparent outline-none border-b border-transparent border-b-black">
                         <x-input-error :messages="$errors->get('password')" class="mt-2" />
                     </div>

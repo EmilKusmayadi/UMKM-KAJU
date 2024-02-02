@@ -4,7 +4,8 @@
         <div class="mx-8">
             <div class="block md:flex">
                 <div class="">
-                    <img src="{{ asset('image/Rectangle 118.png') }}" alt="" class="w-[500px] ">
+                    <img src="{{ url('product_thumbnail') . '/' . $product->first()->product_thumbnail }}" alt=""
+                        class="w-[500px] ">
                     <div class="flex mt-3 lg:mt-5">
                         <img src="{{ asset('image/Rectangle 132.png') }}" alt=""
                             class="w-[90px] md:w-[100px] lg:w-40 me-3">
@@ -15,8 +16,8 @@
                     </div>
                 </div>
                 <div class="md:w-[77%] md:ms-8 lg:w-[40%] lg:ms-16 mt-4">
-                    <h1 class="text-[20px] lg:text-[40px]">Tomat</h1>
-                    <p class="text-[15px] lg:text-[24px] lg:mt-7">Rp.5000 - Per Kg</p>
+                    <h1 class="text-[20px] lg:text-[40px]">{{ $product->first()->product_name_ind }}</h1>
+                    <p class="text-[15px] lg:text-[24px] lg:mt-7">Rp.{{ $product->first()->selling_price }} - Per Kg</p>
                     <div class="flex text-center my-5">
                         <div class="w-[100px] h-[52px] lg:w-[120px] lg:h-[72px] bg-[#F3E8E8] rounded-[10px]">
                             <h2 class="font-bold mt-1">Imperfect</h2>
