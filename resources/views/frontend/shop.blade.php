@@ -64,6 +64,7 @@
                     <div class="ms-[40px]">
                         <div class="text-old-gray w-full flex-col gap-y-3 hidden md:flex">
                             <div class="grid justify-end items-center gap-3 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
+                            
                                 @foreach ($product as $datas)
                                     <div
                                         class="bg-white p-5 h-[190px] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
@@ -89,8 +90,10 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 @endforeach
                             </div>
+
                         </div>
                     </div>
                 </div>

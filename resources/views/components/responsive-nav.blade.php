@@ -19,7 +19,7 @@
             </a>
         </div>
         <div>
-            <a href="#">
+            <a href="/shop">
                 @include('components.svg.cart')
             </a>
         </div>
