@@ -32,30 +32,30 @@
             </div>
         </div>
 
-        <div class="w-full flex justify-between items-center text-2xl mt-20 mb-8 px-4">
+        <div class="w-full flex justify-between items-center text-sm lg:text-2xl font-semibold lg:font-normal my-5 lg:mt-20 lg:mb-8 lg:px-4">
             <h2>BUNDLE</h2>
             <h2>PROMO</h2>
         </div>
 
-        <div class="w-full flex justify-between items-center gap-x-4 xl:gap-x-4">
+        <div class="w-full grid grid-rows-4 gap-y-6 lg:grid-rows-1 grid-cols-1 lg:grid-cols-3 justify-between items-center gap-x-4 xl:gap-x-4">
 
             <div
-                class="bg-[#E9ECF4] flex justify-center xl:justify-between items-end w-full h-64 xl:h-72 px-4 py-5 gap-x-8 rounded-2xl">
+                class="bg-[#E9ECF4] flex justify-center xl:justify-between items-end w-full h-56 lg:h-64 xl:h-72 px-4 py-5 gap-x-8 rounded-2xl">
                 <div class="flex flex-col justify-between h-full">
                     <p class="font-bold">Sayur</p>
 
                     <div>
                         <h1 class="text-3xl font-normal">Tomat</h1>
-                        <p class="font-light">Rp.5000 per kg</p>
+                        <p class="text-sm lg:text-base font-light">Rp.5000 per kg</p>
                     </div>
 
                     <a href="{{ url('/cart') }}">
-                        <button class="bg-green px-6 py-2 text-white font-light rounded-lg text-xs">Beli
+                        <button class="bg-green px-5 lg:px-6 py-2 text-white font-light rounded-lg text-xs">Beli
                             Sekarang</button>
                     </a>
                 </div>
 
-                <div class="w-48 xl:w-52 mb-5">
+                <div class="w-36 lg:w-48 xl:w-52 mb-5">
                     <a href="{{ url('/detail') }}">
                         <img src="{{ asset('image/cherry-tomato-vegetable-pizza-tomato-png-image-picture-download-1576239854cd1f0dbed9d087d0c87744.png') }}"
                             alt="">
@@ -64,22 +64,22 @@
             </div>
 
             <div
-                class="bg-[#EAD9CF] flex justify-center xl:justify-between items-end w-full h-64 xl:h-72 px-4 py-5 gap-x-8 rounded-2xl">
+                class="bg-[#EAD9CF] flex justify-center xl:justify-between items-end w-full h-56 lg:h-64 xl:h-72 px-4 py-5 gap-x-8 rounded-2xl">
                 <div class="flex flex-col justify-between h-full">
                     <p class="font-bold">Sayur</p>
 
                     <div>
                         <h1 class="text-3xl font-normal">Paprika</h1>
-                        <p class="font-light">Rp.5000 per kg</p>
+                        <p class="text-sm lg:text-base font-light">Rp.5000 per kg</p>
                     </div>
 
                     <a href="{{ url('/cart') }}">
-                        <button class="bg-green px-6 py-2 text-white font-light rounded-lg text-xs">Beli
+                        <button class="bg-green px-5 lg:px-6 py-2 text-white font-light rounded-lg text-xs">Beli
                             Sekarang</button>
                     </a>
                 </div>
                 <a href="{{ url('/detail') }}">
-                    <div class="w-48 xl:w-52">
+                    <div class="w-36 lg:w-48 xl:w-52">
                         <img src="{{ asset('image/bell-pepper-stuffed-peppers-food-vegetable-fruit-vegetable-6e2c9c6b8cab99b613caf45b442d1340.png') }}"
                             alt="">
                     </div>
@@ -87,22 +87,45 @@
             </div>
 
             <div
-                class="bg-[#F3E8E8] flex justify-center xl:justify-between items-end w-full h-64 xl:h-72 px-4 py-5 gap-x-8 rounded-2xl">
+                class="bg-[#F3E8E8] flex justify-center xl:justify-between items-end w-full h-56 lg:h-64 xl:h-72 px-4 py-5 gap-x-8 rounded-2xl">
                 <div class="flex flex-col justify-between h-full">
                     <p class="font-bold">Sayur</p>
 
                     <div>
                         <h1 class="text-3xl font-normal">Selada</h1>
-                        <p class="font-light">Rp.5000 per kg</p>
+                        <p class="text-sm lg:text-base font-light">Rp.5000 per kg</p>
                     </div>
 
                     <a href="{{ url('/cart') }}">
-                        <button class="bg-green px-6 py-2 text-white font-light rounded-lg text-xs">Beli
+                        <button class="bg-green px-5 lg:px-6 py-2 text-white font-light rounded-lg text-xs">Beli
                             Sekarang</button>
                     </a>
                 </div>
                 <a href="{{ url('/detail') }}">
-                    <div class="w-48 xl:w-52">
+                    <div class="w-36 lg:w-48 xl:w-52">
+                        <img src="{{ asset('image/romaine-lettuce-leaf-vegetable-salad-leaf-lettuce-vegetable-98bb08e8b78390c60956d2f33ed33afa.png') }}"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="lg:hidden bg-[#F3E8E8] flex justify-center xl:justify-between items-end w-full h-56 lg:h-64 xl:h-72 px-4 py-5 gap-x-8 rounded-2xl">
+                <div class="flex flex-col justify-between h-full">
+                    <p class="font-bold">Sayur</p>
+
+                    <div>
+                        <h1 class="text-3xl font-normal">Selada</h1>
+                        <p class="text-sm lg:text-base font-light">Rp.5000 per kg</p>
+                    </div>
+
+                    <a href="{{ url('/cart') }}">
+                        <button class="bg-green px-5 lg:px-6 py-2 text-white font-light rounded-lg text-xs">Beli
+                            Sekarang</button>
+                    </a>
+                </div>
+                <a href="{{ url('/detail') }}">
+                    <div class="w-36 lg:w-48 xl:w-52">
                         <img src="{{ asset('image/romaine-lettuce-leaf-vegetable-salad-leaf-lettuce-vegetable-98bb08e8b78390c60956d2f33ed33afa.png') }}"
                             alt="">
                     </div>
@@ -111,30 +134,31 @@
 
         </div>
 
-        <div class="w-full flex flex-col gap-y-8 justify-center items-center mt-24 mb-28 xl:mb-36 text-center">
-            <h3 class="text-[#345E5C] font-bold text-2xl">Spesial untuk semua</h3>
-            <h1 class="text-old-gray text-4xl font-normal">Hasil Hidroponik terbaik dari kebun<br>hidroponik terbaik
-            </h1>
+        <div class="w-full flex flex-col gap-y-4 lg:gap-y-8 justify-center items-center my-12 lg:mt-24 lg:mb-28 xl:mb-36 text-center">
+            <h3 class="text-[#345E5C] font-bold lg:text-2xl">Spesial untuk semua</h3>
+            <p class="text-old-gray lg:text-4xl font-normal">
+                Hasil Hidroponik terbaik dari kebun<br>hidroponik terbaik
+            </p>
         </div>
 
-        <div class="w-full flex justify-center items-center rounded-r-2xl h-96 bg-green">
+        <div class="w-full flex justify-center items-center rounded-2xl h-32 lg:h-96 bg-green">
             <div class="w-full rounded-2xl overflow-hidden">
                 <img src="{{ asset('image/getty-images-oIXoJSXuCpw-unsplash 2.png') }}" alt="">
             </div>
 
-            <div class="text-white w-full h-full flex flex-col items-start justify-center gap-y-8 pl-10 pr-14">
-                <h1 class="text-4xl font-medium">Keajaiban dunia<br>sayuran<br>hidroponik</h1>
-                <p>Dibangun di atas prinsip teknologi<br>hidroponik terkini.</p>
-                <a href="{{ url('/about') }}" class="underline">Tentang Kami</a>
+            <div class="text-white w-full h-full flex flex-col items-start justify-center gap-y-2 pt-2 lg:pt-0 lg:gap-y-8 pl-3 lg:pl-10 lg:pr-14">
+                <h1 class="text-xs lg:text-4xl font-medium">Keajaiban dunia<br>sayuran<br>hidroponik</h1>
+                <p class="text-[0.50rem] lg:text-base">Dibangun di atas prinsip teknologi<br>hidroponik terkini.</p>
+                <a href="{{ url('/about') }}" class="text-[0.60rem] font-light lg:font-normal lg:text-base border-b border-b-white">Tentang Kami</a>
 
-                <div class="relative flex justify-center items-center self-end -translate-y-5">
-                    <div class="absolute w-24 h-24 bg-white/5 rounded-full"></div>
-                    <a href="{{ url('/about') }}" class="text-xs z-10 hover:underline">More Info</a>
+                <div class="relative flex justify-center items-center self-end -translate-x-5 -translate-y-5 lg:-translate-x-0 lg:-translate-y-5">
+                    <div class="absolute w-10 h-10 lg:w-24 lg:h-24 bg-white/5 rounded-full"></div>
+                    <a href="{{ url('/about') }}" class="text-[0.35rem] lg:text-xs z-10 hover:underline">More Info</a>
                 </div>
             </div>
         </div>
 
-        <h1 class="text-green font-bold text-2xl text-center mt-44 lg:mb-24 xl:mb-20">Penuhi Kebutuhan Sayur & Buah</h1>
+        <h1 class="text-green font-bold text-sm lg:text-2xl text-center my-10 lg:mt-44 lg:mb-24 xl:mb-20">Penuhi Kebutuhan Sayur & Buah</h1>
 
         <div class="text-old-gray w-full flex flex-col gap-y-16">
             <div class="w-full flex justify-between items-end">
