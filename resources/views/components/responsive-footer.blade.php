@@ -1,5 +1,6 @@
 <footer class="w-full bg-[#E8C597] pb-5 px-4 lg:p-10 flex justify-between items-end h-72 lg:h-72 xl:h-80 relative">
-    <div class="w-full h-full absolute top-0 left-0 flex flex-col justify-between items-center pt-7 xl:pt-9 lg:pb-10 xl:pb-12">
+    <div
+        class="w-full h-full absolute top-0 left-0 flex flex-col justify-between items-center pt-7 xl:pt-9 lg:pb-10 xl:pb-12">
         <div>
             <ul class="flex xl:text-lg gap-x-7 text-old-gray">
                 <li><a href="{{ url('/shop') }}">Shop</a></li>

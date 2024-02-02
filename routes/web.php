@@ -31,47 +31,55 @@ Route::resource('/footers', FooterController::class);
 
 Route::get('/', function () {
     return view('welcome');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/detail', function () {
     return view('frontend.detail');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/shop', function () {
     return view('frontend.shop');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/about', function () {
     return view('frontend.about');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/success', function () {
     return view('frontend.pembayaran_berhasil');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/account', function () {
     return view('frontend.akun');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/cart', function () {
     return view('frontend.keranjang');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/promo', function () {
     return view('frontend.promo');
-})->middleware(['auth', 'verified']);
+});
 
 Route::get('/login-admin', function () {
-    return view('auth.admin-login');
-})->middleware(['auth', 'verified']);
+    return view('backend.admin-login');
+});
 
 Route::get('/register-admin', function () {
-    return view('auth.admin-register');
-})->middleware(['auth', 'verified']);
+    return view('backend.admin-register');
+});
+
+Route::get('/login-user', function () {
+    return view('frontend.login-user');
+});
+
+Route::get('/register-user', function () {
+    return view('frontend.register-user');
+});
 require __DIR__ . '/auth.php';
 
 
