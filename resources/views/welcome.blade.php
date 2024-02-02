@@ -373,7 +373,9 @@
     </div>
 
     <footer class="w-full bg-peanut flex justify-between items-end px-6 pt-8 pb-12">
-        <div class="text-black pr-5">@2024</div>
+        <div class="text-black pr-5 text-xs md:text-xl w-[250px]">
+            <h1>{{ $footer->first()->copyright }}</h1>
+        </div>
         <div class="flex flex-col justify-between items-center gap-y-32">
             <div>
                 <ul class="flex gap-x-5 text-old-gray">
@@ -384,8 +386,16 @@
             </div>
             <h1 class="text-8xl font-bold text-[#1C1D1C]">Kajuu</h1>
         </div>
-        <div class="text-black">
-            All RIghts Reservd
+        <div class="w-[150px] text-xs md:text-2xl text-black flex justify-evenly">
+            <a href="{{ $footer->first()->email }}">
+                <img src="{{ asset('../image/email.svg') }}" alt="">
+            </a>
+            <a href="{{ $footer->first()->facebook }}">
+                <img src="{{ asset('../image/facebook.svg') }}" alt="">
+            </a>
+            <a href="{{ $footer->first()->twitter }}">
+                <img src="{{ asset('../image/twitter.svg') }}" alt="" class="pt-1">
+            </a>
         </div>
     </footer>
 
