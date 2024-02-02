@@ -7,10 +7,16 @@
                 <h1 class="font-bold text-[30px] md:text-[40px]">{{ $about->first()->title }}</h1>
             </div>
             <div class="md:mt-16 md:mb-7 md:text-xl hidden md:block">
-                <p>{{ $about->first()->short_title }}</p>
+                <p>
+                    Kami berkomitmen untuk menghadirkan sayuran hidroponik <br> berkualitas tinggi dengan fokus pada
+                    kesehatan dan <br> keberlanjutan</p>
             </div>
             <div class="mb-6 md:mb-0 mt-5 block md:hidden">
-                <p class="">{{ $about->first()->short_title }}</p>
+                <p>
+
+                    Kami berkomitmen untuk menghadirkan sayuran hidroponik <br> berkualitas tinggi dengan fokus pada
+                    kesehatan dan <br> keberlanjutan
+                </p>
             </div>
         </div>
         <div class="relative overflow-hidden flex justify-center items-center h-[40vh] md:h-[58vh] w-full">
@@ -133,8 +139,7 @@
                     </div>
                 </div>
                 <div class="rounded-2xl overflow-hidden w-[40vw]">
-                    <img src="{{ asset('image/getty-images-TXgvWNoxNls-unsplash.jpg') }}" class=""
-                        alt="">
+                    <img src="{{ asset('image/getty-images-TXgvWNoxNls-unsplash.jpg') }}" class="" alt="">
                 </div>
             </div>
         </div>

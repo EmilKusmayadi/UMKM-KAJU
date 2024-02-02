@@ -4,7 +4,7 @@
         <div class="mx-[30px]">
             <div class="flex justify-between">
                 <div class="font-medium">
-                    <h1 class="text-[22px] md:text-[45px] lg:text-[60px] mt-10 md:mt-20">Keajaiban dunia <br> sayuran
+                    <h1 class="text-[22px] md:text-[45px] lg:text-[60px] mt-10 ">Keajaiban dunia <br> sayuran
                         hidroponik
                     </h1>
                 </div>
@@ -99,7 +99,7 @@
                                         </div>
                                         <div class="flex justify-between items-center w-full">
                                             <div>
-                                                <h2 class="text-sm font-normal">Bayam</h2>
+                                                <h2 class="text-sm font-normal">Paprika</h2>
                                                 <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                             </div>
                                             <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -123,7 +123,7 @@
                                         </div>
                                         <div class="flex justify-between items-center w-full">
                                             <div>
-                                                <h2 class="text-sm font-normal">Bayam</h2>
+                                                <h2 class="text-sm font-normal">Tomat</h2>
                                                 <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                             </div>
                                             <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -147,7 +147,7 @@
                                         </div>
                                         <div class="flex justify-between items-center w-full">
                                             <div>
-                                                <h2 class="text-sm font-normal">Bayam</h2>
+                                                <h2 class="text-sm font-normal">Selada</h2>
                                                 <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                             </div>
                                             <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -171,12 +171,11 @@
                                 <div
                                     class="bg-white p-5 h-[190px] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
                                     <div class="w-24">
-                                        <img src="{{ asset('image/choy-sum-malabar-spinach-leaf-vegetable-vegetable-9bd9b6b779bb3e1bb3390ca0ac149cc7.png') }}"
-                                            alt="">
+                                        <img src="{{ asset('image/bungakol.png') }}" alt="">
                                     </div>
                                     <div class="flex justify-between items-center w-full">
                                         <div>
-                                            <h2 class="text-sm font-normal">Bayam</h2>
+                                            <h2 class="text-sm font-normal">Bunga Kol</h2>
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -195,12 +194,11 @@
                                 <div
                                     class="bg-white p-5 h-[190px] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
                                     <div class="w-24">
-                                        <img src="{{ asset('image/bell-pepper-stuffed-peppers-food-vegetable-fruit-vegetable-6e2c9c6b8cab99b613caf45b442d1340.png') }}"
-                                            alt="">
+                                        <img src="{{ asset('image/strawberry.png') }}" alt="">
                                     </div>
                                     <div class="flex justify-between items-center w-full">
                                         <div>
-                                            <h2 class="text-sm font-normal">Bayam</h2>
+                                            <h2 class="text-sm font-normal">Strawberry</h2>
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -219,12 +217,11 @@
                                 <div
                                     class="bg-white p-5 h-[190px] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
                                     <div class="w-24">
-                                        <img src="{{ asset('image/cherry-tomato-vegetable-pizza-tomato-png-image-picture-download-1576239854cd1f0dbed9d087d0c87744.png') }}"
-                                            alt="">
+                                        <img src="{{ asset('image/mentimun.png') }}" alt="">
                                     </div>
                                     <div class="flex justify-between items-center w-full">
                                         <div>
-                                            <h2 class="text-sm font-normal">Bayam</h2>
+                                            <h2 class="text-sm font-normal">Mentimun</h2>
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -243,12 +240,11 @@
                                 <div
                                     class="bg-white p-5 h-[190px] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
                                     <div class="w-24">
-                                        <img src="{{ asset('image/romaine-lettuce-leaf-vegetable-salad-leaf-lettuce-vegetable-98bb08e8b78390c60956d2f33ed33afa.png') }}"
-                                            alt="">
+                                        <img src="{{ asset('image/cabai.png') }}" alt="">
                                     </div>
                                     <div class="flex justify-between items-center w-full">
                                         <div>
-                                            <h2 class="text-sm font-normal">Bayam</h2>
+                                            <h2 class="text-sm font-normal">Cabai Rawit</h2>
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -271,12 +267,11 @@
                                 <div
                                     class="bg-white p-5 h-[190px] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
                                     <div class="w-24">
-                                        <img src="{{ asset('image/choy-sum-malabar-spinach-leaf-vegetable-vegetable-9bd9b6b779bb3e1bb3390ca0ac149cc7.png') }}"
-                                            alt="">
+                                        <img src="{{ asset('image/wortel.png') }}" alt="">
                                     </div>
                                     <div class="flex justify-between items-center w-full">
                                         <div>
-                                            <h2 class="text-sm font-normal">Bayam</h2>
+                                            <h2 class="text-sm font-normal">Wortel</h2>
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -295,12 +290,11 @@
                                 <div
                                     class="bg-white p-5 h-[190px] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
                                     <div class="w-24">
-                                        <img src="{{ asset('image/bell-pepper-stuffed-peppers-food-vegetable-fruit-vegetable-6e2c9c6b8cab99b613caf45b442d1340.png') }}"
-                                            alt="">
+                                        <img src="{{ asset('image/pear.png') }}" alt="">
                                     </div>
                                     <div class="flex justify-between items-center w-full">
                                         <div>
-                                            <h2 class="text-sm font-normal">Bayam</h2>
+                                            <h2 class="text-sm font-normal">Pir</h2>
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -319,12 +313,11 @@
                                 <div
                                     class="bg-white p-5 h-[190px] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
                                     <div class="w-24">
-                                        <img src="{{ asset('image/cherry-tomato-vegetable-pizza-tomato-png-image-picture-download-1576239854cd1f0dbed9d087d0c87744.png') }}"
-                                            alt="">
+                                        <img src="{{ asset('image/kangkung.png') }}" alt="">
                                     </div>
                                     <div class="flex justify-between items-center w-full">
                                         <div>
-                                            <h2 class="text-sm font-normal">Bayam</h2>
+                                            <h2 class="text-sm font-normal">Kangkung</h2>
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -343,12 +336,11 @@
                                 <div
                                     class="bg-white p-5 h-[190px] w-full rounded-xl flex flex-col justify-end items-center gap-y-4">
                                     <div class="w-24">
-                                        <img src="{{ asset('image/romaine-lettuce-leaf-vegetable-salad-leaf-lettuce-vegetable-98bb08e8b78390c60956d2f33ed33afa.png') }}"
-                                            alt="">
+                                        <img src="{{ asset('image/jeruknipis.png') }}" alt="">
                                     </div>
                                     <div class="flex justify-between items-center w-full">
                                         <div>
-                                            <h2 class="text-sm font-normal">Bayam</h2>
+                                            <h2 class="text-sm font-normal">Jeruk Nipis</h2>
                                             <p class="font-light text-sm text-[#9AAF43]">Rp.5000</p>
                                         </div>
                                         <div class="h-[2rem] w-[2rem] grid place-items-center rounded-xl bg-peanut">
@@ -524,7 +516,8 @@
                         class="bg-[#D9F2F9] px-5 py-8 rounded-xl w-full h-full flex flex-col justify-between relative mb-7 md:mb-0">
                         <div class="text-old-gray flex flex-col gap-y-8">
                             <p class="font-bold text-black">Bundle</p>
-                            <h1 class="text-2xl md:text-4xl font-semibold leading-8">Belanja lebih <br> hemat dan lebih
+                            <h1 class="text-2xl md:text-4xl font-semibold leading-8">Belanja lebih <br> hemat dan
+                                lebih
                                 <br>puas
                             </h1>
                             <p class="text-xs md:text-lg">Mulai dari Rp.3000 per kg</p>
