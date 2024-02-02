@@ -154,7 +154,7 @@
             <div class="">
                 <div class="py-10 block md:flex flex-col justify-center items-center gap-y-10">
                     <div class="w-full block md:flex justify-between items-center text-white">
-                        <h1 class="font-bold text-2xl text-[#345E5C]">Penawaran Spesial</h1>
+                        <h1 class="font-bold text-lg md:text-2xl text-[#345E5C]">Penawaran Spesial</h1>
                         <a href="{{ url('/shop') }}"
                             class="uppercase border-b-[1px] border-white px-1 font-light">semua</a>
                     </div>
