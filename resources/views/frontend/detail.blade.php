@@ -1,5 +1,5 @@
 <x-app-layout>
-    @include('components.nav')
+    @include('components.responsive-nav')
     <div class="h-[200vh]">
         <div class="mx-8">
             <div class="block md:flex">

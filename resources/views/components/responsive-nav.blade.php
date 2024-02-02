@@ -14,12 +14,12 @@
 
     <div class="lg:flex items-center gap-x-8 hidden z-40">
         <div>
-            <a href="#">
+            <a href="/login">
                 @include('components.svg.people')
             </a>
         </div>
         <div>
-            <a href="#">
+            <a href="/shop">
                 @include('components.svg.cart')
             </a>
         </div>
