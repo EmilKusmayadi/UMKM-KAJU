@@ -14,7 +14,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $data = products::orderBy('id', 'asc')->paginate(5);
+        $data = products::orderBy('id', 'asc')->get();
         return view('backend.products.index')->with('data', $data);
     }
 
@@ -31,23 +31,6 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        Session::flash('product_name_ind', $request->product_name_ind);
-        Session::flash('product_slug_ind', $request->product_slug_ind);
-        Session::flash('product_code', $request->tproduct_codeest);
-        Session::flash('product_qty', $request->product_qty);
-        Session::flash('product_tags_ind', $request->product_tags_ind);
-        Session::flash('product_size_ind', $request->product_size_ind);
-        Session::flash('product_color_ind', $request->product_color_ind);
-        Session::flash('selling_price', $request->selling_price);
-        Session::flash('discount_price', $request->discount_price);
-        Session::flash('short_descp_ind', $request->short_descp_ind);
-        Session::flash('long_descp_ind', $request->long_descp_ind);
-        Session::flash('product_thumbnail', $request->product_thumbnail);
-        Session::flash('hot_deals', $request->hot_deals);
-        Session::flash('featured', $request->featured);
-        Session::flash('special_offer', $request->special_offer);
-        Session::flash('special_deals', $request->special_deals);
-        Session::flash('status', $request->status);
         $request->validate([
             'product_name_ind' => 'required',
             'product_slug_ind' => 'required',
@@ -79,40 +62,27 @@ class ProductsController extends Controller
             'short_descp_ind.required' => 'wajib di isi',
             'long_descp_ind.required' => 'wajib di isi',
             'product_thumbnail.required' => 'wajib di isi',
-            'product_thumbnail.mimes' => 'gambar hanya di perbolehkan type filenya png.jgp.jpeg',
+            'product_thumbnail.mimes' => 'gambar hanya di perbolehkan type filenya png,jpg,jpeg',
             'hot_deals.required' => 'wajib di isi',
             'featured.required' => 'wajib di isi',
             'special_offer.required' => 'wajib di isi',
             'special_deals.required' => 'wajib di isi',
             'status.required' => 'wajib di isi',
         ]);
+
         $foto_file = $request->file('product_thumbnail');
         $foto_extensi = $foto_file->extension();
         $foto_nama = date('ymdhis') . '.' . $foto_extensi;
         $foto_file->move(public_path('product_thumbnail'), $foto_nama);
 
-        $data = [
-            'product_name_ind' => $request->input('product_name_ind'),
-            'product_slug_ind' => $request->input('product_slug_ind'),
-            'product_code' => $request->input('product_code'),
-            'product_qty' => $request->input('product_qty'),
-            'product_tags_ind' => $request->input('product_tags_ind'),
-            'product_size_ind' => $request->input('product_size_ind'),
-            'product_color_ind' => $request->input('product_color_ind'),
-            'selling_price' => $request->input('selling_price'),
-            'discount_price' => $request->input('discount_price'),
-            'short_descp_ind' => $request->input('short_descp_ind'),
-            'long_descp_ind' => $request->input('long_descp_ind'),
-            'product_thumbnail' =>  $foto_nama,
-            'hot_deals' => $request->input('hot_deals'),
-            'featured' => $request->input('featured'),
-            'special_offer' => $request->input('special_offer'),
-            'special_deals' => $request->input('special_deals'),
-            'status' => $request->input('status'),
-        ];
+        $data = $request->except('product_thumbnail');
+        $data['product_thumbnail'] = $foto_nama;
+
         products::create($data);
+
         return redirect('products')->with('success', 'Berhasil memasukkan data');
     }
+
 
     /**
      * Display the specified resource.
