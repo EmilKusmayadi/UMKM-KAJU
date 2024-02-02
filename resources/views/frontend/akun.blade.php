@@ -1,23 +1,23 @@
 <x-app-layout>
     <div class="">
-        @include('components.nav')
-        <div class="md:flex justify-around mt-14 mb-7 mx-8">
-            <div class="md:flex justify-around mt-14 mb-7 ">
-                <div class="bg-[#E8DDC1] w-[303px] h-[386px] rounded-[20px] hidden md:block">
-                    <h1 class="font-bold text-[32px] mt-12 mb-8 ms-[70px]">Menu Utama</h1>
-                    <div class="ms-[70px]">
-                        <p
+        @include('components.responsive-nav')
+        <div class="md:flex justify-around my-14 mx-8">
+            <div class="md:flex justify-around my-14 mb-7 ">
+                <div class="bg-[#E8DDC1] w-[303px] h-[386px] rounded-[20px] pl-10 hidden md:block">
+                    <h1 class="font-bold text-[32px] mt-12 mb-8">Menu Utama</h1>
+                    <div class="flex flex-col gap-y-2">
+                        <a href="/account"
                             class="text-[20px] mb-5 border border-b-black border-x-transparent border-t-transparent w-[150px]">
-                            Akun</p>
-                        <p
+                            Akun</a>
+                        <a href="#"
                             class="text-[20px] mb-5 border border-b-black border-x-transparent border-t-transparent w-[150px]">
-                            Daftar Transaksi</p>
-                        <p
+                            Daftar Transaksi</a>
+                        <a href="#"
                             class="text-[20px] mb-5 border border-b-black border-x-transparent border-t-transparent w-[150px]">
-                            Alamat</p>
-                        <p
+                            Alamat</a>
+                        <a href="/"
                             class="text-[20px] mb-5 border border-b-black border-x-transparent border-t-transparent w-[150px]">
-                            Keluar</p>
+                            Keluar</a>
                     </div>
                 </div>
                 <div class="bg-peanut py-3 rounded-lg block md:hidden">
@@ -26,7 +26,7 @@
                             <a href="#" class="text-sm">Akun</a>
                         </li>
                         <li class="font-light">
-                            <a href="#" class="text-sm"> Daftar Transaksi</a>
+                            <a href="#" class="text-sm">Daftar Transaksi</a>
                         </li>
                         <li class="font-light">
                             <a href="#" class="text-sm">Keluar</a>
@@ -62,5 +62,5 @@
             </div>
         </div>
     </div>
-    @include('components.footer')
+    @include('components.responsive-footer')
 </x-app-layout>

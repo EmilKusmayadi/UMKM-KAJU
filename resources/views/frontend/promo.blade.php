@@ -1,5 +1,5 @@
 <x-app-layout>
-    @include('components.nav')
+    @include('components.responsive-nav')
     <div class="mx-5 md:mx-8">
         <div class="w-full mt-8">
             <img src="{{ asset('image/mobile-promo.png') }}" alt="" class=" block md:hidden">
@@ -223,5 +223,5 @@
             </div>
         </div>
     </div>
-    @include('components.footer')
+    @include('components.responsive-footer')
 </x-app-layout>

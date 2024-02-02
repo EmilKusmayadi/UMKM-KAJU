@@ -1,11 +1,11 @@
 <x-app-layout>
     @include('components.responsive-nav')
-    <div class="h-[200vh]">
+    <div class="h-[200vh] mt-4 lg:mt-10">
         <div class="mx-8">
             <div class="block md:flex">
                 <div class="">
                     <img src="{{ url('product_thumbnail') . '/' . $product->first()->product_thumbnail }}" alt=""
-                        class="w-[500px] ">
+                        class="w-[500px] rounded-xl overflow-hidden">
                     <div class="flex mt-3 lg:mt-5">
                         <img src="{{ asset('image/Rectangle 132.png') }}" alt=""
                             class="w-[90px] md:w-[100px] lg:w-40 me-3">
@@ -18,18 +18,24 @@
                 <div class="md:w-[77%] md:ms-8 lg:w-[40%] lg:ms-16 mt-4">
                     <h1 class="text-[20px] lg:text-[40px]">{{ $product->first()->product_name_ind }}</h1>
                     <p class="text-[15px] lg:text-[24px] lg:mt-7">Rp.{{ $product->first()->selling_price }} - Per Kg</p>
-                    <div class="flex text-center my-5">
-                        <div class="w-[100px] h-[52px] lg:w-[120px] lg:h-[72px] bg-[#F3E8E8] rounded-[10px]">
-                            <h2 class="font-bold mt-1">Imperfect</h2>
-                            <div class="flex text-[14px] ms-3 mt-1">
-                                <p class="text-xs lg:text-sm">1 Kg</p>
-                                <p class="ms-2 lg:ms-4 text-xs lg:text-sm">Rp.3000</p>
+                    <div class="flex text-center my-5 gap-x-3 lg:gap-x-5">
+
+                        <div class="w-28 h-16 lg:w-32 lg:h-[4.2rem] flex flex-col gap-y-1 lg:gap-y-2 justify-center items-center bg-[#F3E8E8] rounded-lg">
+                            <h2 class="font-semibold text-sm lg:text-base text-black">Imperfect</h2>
+                            <div class="flex text-xs lg:text-sm justify-evenly w-full">
+                                <p>1Kg</p>
+                                <p>Rp.3000</p>
                             </div>
                         </div>
-                        <div class="w-[100px] h-[52px] lg:w-[120px] lg:h-[72px] bg-[#EAD9CF] rounded-[10px] ms-3">
-                            <h2 class="font-bold mt-1">Normal</h2>
-                            <p class="text-xs lg:text-sm">1 kg</p>
+
+                        <div class="w-28 h-16 lg:w-32 lg:h-[4.2rem] flex flex-col gap-y-1 lg:gap-y-2 justify-center items-center bg-[#EAD9CF] rounded-lg">
+                            <h2 class="font-semibold text-sm lg:text-base text-black">Normal</h2>
+                            <div class="flex text-xs lg:text-sm justify-evenly w-full">
+                                <p>1Kg</p>
+                                {{-- <p>Rp.3000</p> --}}
+                            </div>
                         </div>
+
                     </div>
                     <div class="w-full h-12 lg:h-[71px] bg-[#E8C597] rounded-[10px] pt-4 lg:pt-6 my-5 text-center">
                         <div class="flex justify-center text-[16px] font-light">
@@ -54,7 +60,7 @@
                         </a>
                         <a href="{{ url('/cart') }}">
                             <button
-                                class="md:w-[140px] lg:w-[208px] md:h-[47px] lg:h-[52px] bg-[#E8C597] text-white rounded-[10px] hidden md:block md:text-xs lg:text-lg">Masukkan
+                                class="md:w-[140px] lg:w-[208px] md:h-[47px] lg:h-[52px] bg-[#E8C597] text-black rounded-[10px] hidden md:block md:text-xs lg:text-lg">Masukkan
                                 Keranjang
                             </button>
                         </a>
@@ -154,6 +160,6 @@
                 </div>
             </div>
         </div>
-        @include('components.footer')
+        @include('components.responsive-footer')
     </div>
 </x-app-layout>
