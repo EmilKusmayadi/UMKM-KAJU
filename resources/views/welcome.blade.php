@@ -13,7 +13,7 @@
 </head>
 
 <body class="bg-[#F5F5F5]">
-    @include('components.nav')
+    @include('components.responsive-nav')
 
     <main class="px-8">
         <div class="relative mt-4 rounded-2xl overflow-hidden flex justify-center items-center h-[85vh]">
@@ -372,32 +372,7 @@
         </div>
     </div>
 
-    <footer class="w-full bg-peanut flex justify-between items-end px-6 pt-8 pb-12">
-        <div class="text-black pr-5 text-xs md:text-xl w-[250px]">
-            <h1>{{ $footer->first()->copyright }}</h1>
-        </div>
-        <div class="flex flex-col justify-between items-center gap-y-32">
-            <div>
-                <ul class="flex gap-x-5 text-old-gray">
-                    <li><a href="{{ url('/shop') }}">Shop</a></li>
-                    <li><a href="{{ url('/shop') }}">Tentang Kami</a></li>
-                    <li><a href="#">Kontak</a></li>
-                </ul>
-            </div>
-            <h1 class="text-8xl font-bold text-[#1C1D1C]">Kajuu</h1>
-        </div>
-        <div class="w-[150px] text-xs md:text-2xl text-black flex justify-evenly">
-            <a href="{{ $footer->first()->email }}">
-                <img src="{{ asset('../image/email.svg') }}" alt="">
-            </a>
-            <a href="{{ $footer->first()->facebook }}">
-                <img src="{{ asset('../image/facebook.svg') }}" alt="">
-            </a>
-            <a href="{{ $footer->first()->twitter }}">
-                <img src="{{ asset('../image/twitter.svg') }}" alt="" class="pt-1">
-            </a>
-        </div>
-    </footer>
+    @include('components.responsive-footer')
 
 </body>
 
