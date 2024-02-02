@@ -109,26 +109,30 @@
         </div>
         {{-- END VISI MISI --}}
         {{-- START jangka waktu --}}
-        <div class=" my-32 w-full flex justify-center items-center px-20">
-            <div class="relative bg-peanut p-10 flex justify-center items-center gap-x-10 rounded-2xl">
+        <div class="my-14 lg:my-40 w-full flex justify-center items-center lg:px-20">
+            <div class="relative bg-peanut py-6 px-4 lg:p-10 flex justify-center items-center lg:gap-x-10 rounded-2xl">
                 <div>
-                    <div class="text-old-gray w-80 flex flex-col gap-y-7">
-                        <h1 class="font-semibold text-4xl">Memastikan ketersediaan sepanjang tahun</h1>
-                        <p class="font-light text-sm">Berkomitmen pada dukungan terhadap petani lokal, membentuk
+                    <div class="text-old-gray lg:w-80 flex flex-col gap-y-3 lg:gap-y-7">
+                        <h1 class="font-semibold lg:text-4xl">Memastikan ketersediaan sepanjang tahun</h1>
+                        <p class="font-light text-xs lg:text-sm">Berkomitmen pada dukungan terhadap petani lokal,
+                            membentuk
                             jaringan ekonomi yang berkelanjutan</p>
-                        <a href="#" class="border-b border-black py-1 w-fit font-light text-black">About Us</a>
+                        <a href="{{ url('/about') }}"
+                            class="border-b border-black text-sm lg:text-base lg:py-1 w-fit lg:font-light text-black">About
+                            Us</a>
                     </div>
 
                     <div
-                        class="bg-[#997764] p-3 rounded-xl flex justify-between items-center absolute -translate-y-12 translate-x-52">
-                        <div class="w-20 bg-white p-2 rounded-xl">
-                            <img src="{{ asset('image/bell-pepper-stuffed-peppers-food-vegetable-fruit-vegetable-6e2c9c6b8cab99b613caf45b442d1340.png') }}"
+                        class="bg-[#997764] scale-75 lg:scale-100 h-14 lg:h-fit w-48 lg:w-fit py-1 px-2 lg:p-3 rounded-xl flex justify-between items-center absolute -translate-y-12 lg:-translate-y-12 translate-x-36 lg:translate-x-52">
+                        <div class="lg:h-fit w-10 lg:w-20 bg-white p-2 rounded-xl">
+                            <img src="{{ asset('image/romaine-lettuce-leaf-vegetable-salad-leaf-lettuce-vegetable-98bb08e8b78390c60956d2f33ed33afa.png') }}"
                                 alt="">
                         </div>
 
-                        <div class="w-full h-full px-2 flex justify-between items-center gap-x-28">
-                            <div class="h-full gap-y-6 flex flex-col justify-between text-sm text-white font-light">
-                                <h3>Paprika</h3>
+                        <div class="w-full h-full px-2 flex justify-between items-center gap-x-5 lg:gap-x-28">
+                            <div
+                                class="h-full lg:gap-y-6 flex flex-col justify-center lg:justify-between text-xs lg:text-sm text-white font-light">
+                                <h3>Selada</h3>
                                 <h3>Rp.5000</h3>
                             </div>
 
@@ -138,9 +142,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="rounded-2xl overflow-hidden w-[40vw]">
-                    <img src="{{ asset('image/getty-images-TXgvWNoxNls-unsplash.jpg') }}" class="" alt="">
+                <div class="rounded-2xl overflow-hidden h-36 w-60 lg:h-fit lg:w-[40vw]">
+                    <img src="{{ asset('image/getty-images-TXgvWNoxNls-unsplash.jpg') }}" class="h-full lg:h-fit w-full"
+                        alt="">
                 </div>
+
+                {{-- <div class="rounded-2xl h-20 w-20 overflow-hidden bg-cover bg-center bg-no-repeat" style="background: url({{ asset('image/getty-images-TXgvWNoxNls-unsplash.jpg') }})">
+
+                </div> --}}
             </div>
         </div>
 

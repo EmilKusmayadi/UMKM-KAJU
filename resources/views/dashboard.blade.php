@@ -83,12 +83,10 @@
                         </div>
 
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                            <form method="POST" action="{{ route('logout') }}">
+                            <form method="POST" action="{{ route('logout') }}" id="logout-form">
                                 @csrf
-
                                 <x-responsive-nav-link :href="route('logout')"
-                                        onclick="event.preventDefault();
-                                                    this.closest('form').submit();">
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     {{ __('Log Out') }}
                                 </x-responsive-nav-link>
                             </form>
@@ -286,4 +284,3 @@
     </html>
 
 </x-app-layout>
-
