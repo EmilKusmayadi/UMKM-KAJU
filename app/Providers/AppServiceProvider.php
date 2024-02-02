@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('about', $about);
         });
         View::composer('*', function ($view) {
-            $product = Products::orderBy('id', 'desc')->get();
+            $product = Products::orderBy('id', 'asc')->get();
             $view->with('product', $product);
         });
         View::composer('*', function ($view) {
